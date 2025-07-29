@@ -49,7 +49,7 @@ const EarlyAccessSection = () => {
   }
 
   return (
-    <section className="py-24 bg-gradient-subtle">
+    <section id="early-access" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-6">
