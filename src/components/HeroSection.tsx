@@ -25,20 +25,20 @@ const HeroSection = () => {
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="relative inline-block">
                     <span 
-                      className="bg-gradient-to-r from-purple-200 via-blue-200 to-emerald-200 bg-clip-text text-transparent animate-glass-float"
+                      className="bg-gradient-to-r from-purple-100 via-blue-100 to-emerald-100 bg-clip-text text-transparent animate-glass-float"
                       style={{
                         backgroundSize: '200% 200%',
-                        backgroundImage: 'linear-gradient(45deg, #ddd6fe, #bfdbfe, #a7f3d0, #e9d5ff, #bae6fd)',
+                        backgroundImage: 'linear-gradient(45deg, #f3e8ff, #dbeafe, #d1fae5, #fae8ff, #e0f2fe)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent'
                       }}
                     >
                       Iris
                     </span>
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-200/20 via-blue-200/20 to-emerald-200/20 blur-sm animate-glass-shimmer" 
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-100/40 via-blue-100/40 to-emerald-100/40 blur-sm animate-glass-shimmer" 
                           style={{
                             backgroundSize: '200% 200%',
-                            backgroundImage: 'linear-gradient(45deg, #ddd6fe, #bfdbfe, #a7f3d0, #e9d5ff, #bae6fd)',
+                            backgroundImage: 'linear-gradient(45deg, #f3e8ff, #dbeafe, #d1fae5, #fae8ff, #e0f2fe)',
                             filter: 'blur(8px)',
                             zIndex: -1
                           }}>
@@ -103,6 +103,8 @@ const HeroSection = () => {
                   alt="Iris App Interface" 
                   className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
                 />
+                {/* Glass overlay effect */}
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-white/5 to-white/10 border border-white/20 shadow-glass-subtle backdrop-blur-sm z-20 pointer-events-none" />
               </div>
             </div>
           </div>
