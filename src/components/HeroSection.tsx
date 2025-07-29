@@ -23,8 +23,25 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
-                  <span className="relative inline-block px-6 py-2 rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/5 border border-white/30 shadow-glass-subtle backdrop-blur-xl before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/15 before:via-transparent before:to-blue-100/8 before:rounded-2xl before:pointer-events-none after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/8 after:to-white/15 after:rounded-2xl after:pointer-events-none">
-                    <span className="relative z-10 bg-gradient-to-r from-purple-300 via-blue-300 to-emerald-300 bg-clip-text text-transparent font-bold">
+                  <span className="relative inline-block">
+                    <span 
+                      className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+                      style={{
+                        backgroundSize: '200% 200%',
+                        backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      Iris
+                    </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 via-blue-400/30 to-emerald-400/30 blur-sm animate-glass-shimmer" 
+                          style={{
+                            backgroundSize: '200% 200%',
+                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            filter: 'blur(8px)',
+                            zIndex: -1
+                          }}>
                       Iris
                     </span>
                   </span>
