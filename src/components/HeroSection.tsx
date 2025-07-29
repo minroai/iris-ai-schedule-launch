@@ -24,25 +24,37 @@ const HeroSection = () => {
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="relative inline-block">
+                    {/* Background glow for visibility */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/40 via-blue-400/40 to-emerald-400/40 blur-xl animate-glass-shimmer rounded-lg" 
+                          style={{
+                            backgroundSize: '200% 200%',
+                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            filter: 'blur(20px)',
+                            zIndex: -1
+                          }}>
+                    </span>
+                    {/* Main text with enhanced visibility */}
                     <span 
-                      className="bg-gradient-to-r from-purple-100 via-blue-100 to-emerald-100 bg-clip-text text-transparent animate-glass-float"
+                      className="relative bg-gradient-to-r from-purple-300 via-blue-300 to-emerald-300 bg-clip-text text-transparent animate-glass-float font-black"
                       style={{
                         backgroundSize: '200% 200%',
-                        backgroundImage: 'linear-gradient(45deg, #f3e8ff, #dbeafe, #d1fae5, #fae8ff, #e0f2fe)',
+                        backgroundImage: 'linear-gradient(45deg, #c084fc, #93c5fd, #6ee7b7, #c084fc, #67e8f9)',
                         WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
+                        WebkitTextFillColor: 'transparent',
+                        textShadow: '0 0 30px rgba(168, 85, 247, 0.5), 0 0 60px rgba(59, 130, 246, 0.3)',
+                        filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
                       }}
                     >
                       Iris
                     </span>
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-100/40 via-blue-100/40 to-emerald-100/40 blur-sm animate-glass-shimmer" 
+                    {/* Additional shimmer overlay */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-glass-shimmer rounded-lg" 
                           style={{
-                            backgroundSize: '200% 200%',
-                            backgroundImage: 'linear-gradient(45deg, #f3e8ff, #dbeafe, #d1fae5, #fae8ff, #e0f2fe)',
-                            filter: 'blur(8px)',
-                            zIndex: -1
+                            backgroundSize: '200% 100%',
+                            backgroundImage: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
+                            zIndex: 1,
+                            pointerEvents: 'none'
                           }}>
-                      Iris
                     </span>
                   </span>
                 </h1>
@@ -92,19 +104,11 @@ const HeroSection = () => {
             <div className="relative">
               <div className="relative mx-auto max-w-md lg:max-w-lg">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
-                <div className="absolute inset-0 rounded-3xl animate-glass-shimmer" 
-                     style={{
-                       backgroundSize: '200% 200%',
-                       backgroundImage: 'linear-gradient(45deg, transparent, rgba(221, 214, 254, 0.1), rgba(191, 219, 254, 0.1), rgba(167, 243, 208, 0.1), transparent)',
-                       filter: 'blur(1px)'
-                     }} />
                 <img 
                   src={heroImage} 
                   alt="Iris App Interface" 
                   className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
                 />
-                {/* Glass overlay effect */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-white/5 to-white/10 border border-white/20 shadow-glass-subtle backdrop-blur-sm z-20 pointer-events-none" />
               </div>
             </div>
           </div>
