@@ -72,7 +72,12 @@ export default {
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'soft': 'var(--shadow-soft)',
-				'card': 'var(--shadow-card)'
+				'card': 'var(--shadow-card)',
+				'glass': 'var(--shadow-glass)',
+				'glass-hover': 'var(--shadow-glass-hover)',
+				'glass-subtle': 'var(--shadow-glass-subtle)',
+				'glass-large': 'var(--shadow-glass-large)',
+				'glass-large-hover': 'var(--shadow-glass-large-hover)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
