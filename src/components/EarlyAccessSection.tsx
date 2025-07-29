@@ -93,7 +93,7 @@ const EarlyAccessSection = () => {
               
               <Button 
                 type="submit"
-                variant="hero" 
+                variant="iridescent" 
                 size="lg"
                 className="w-full text-lg px-8 py-6 rounded-2xl"
               >
