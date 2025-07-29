@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 100% 99%;
-    --foreground: 222 25% 12%;
+    --background: 240 15% 8%;
+    --foreground: 240 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 25% 12%;
+    --card: 240 20% 12%;
+    --card-foreground: 240 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 25% 12%;
+    --popover: 240 20% 12%;
+    --popover-foreground: 240 15% 95%;
 
     --primary: 250 100% 65%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 250 100% 75%;
 
-    --secondary: 240 7% 97%;
-    --secondary-foreground: 222 25% 12%;
+    --secondary: 240 20% 15%;
+    --secondary-foreground: 240 15% 85%;
 
-    --muted: 240 7% 97%;
-    --muted-foreground: 240 4% 46%;
+    --muted: 240 20% 15%;
+    --muted-foreground: 240 15% 65%;
 
-    --accent: 250 100% 95%;
-    --accent-foreground: 250 100% 65%;
+    --accent: 250 100% 20%;
+    --accent-foreground: 250 100% 85%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 7% 93%;
-    --input: 240 7% 93%;
+    --border: 240 30% 25%;
+    --input: 240 30% 25%;
     --ring: 250 100% 65%;
 
-    /* Gradients */
+    /* Enhanced Gradients for dark theme */
     --gradient-primary: linear-gradient(135deg, hsl(250 100% 65%), hsl(260 100% 70%));
-    --gradient-subtle: linear-gradient(180deg, hsl(248 100% 99%), hsl(240 7% 97%));
-    --gradient-hero: linear-gradient(135deg, hsl(250 100% 65% / 0.1), hsl(260 100% 70% / 0.05));
+    --gradient-subtle: linear-gradient(180deg, hsl(240 15% 10%), hsl(240 20% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(250 100% 65% / 0.15), hsl(260 100% 70% / 0.08));
 
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(250 100% 65% / 0.2);
