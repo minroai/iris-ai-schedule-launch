@@ -1,8 +1,6 @@
 import { Heart, Sparkles } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="py-16 bg-gradient-to-br from-white/12 via-purple-50/8 to-white/6 border-t border-white/25 backdrop-blur-xl relative overflow-hidden shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_-4px_16px_rgba(139,92,246,0.1)] before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-200/10 before:via-pink-200/5 before:to-cyan-200/8 before:pointer-events-none after:absolute after:inset-[1px] after:bg-gradient-to-b after:from-white/8 after:to-transparent after:pointer-events-none">
+  return <footer className="py-16 bg-gradient-to-br from-white/12 via-purple-50/8 to-white/6 border-t border-white/25 backdrop-blur-xl relative overflow-hidden shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_-4px_16px_rgba(139,92,246,0.1)] before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-200/10 before:via-pink-200/5 before:to-cyan-200/8 before:pointer-events-none after:absolute after:inset-[1px] after:bg-gradient-to-b after:from-white/8 after:to-transparent after:pointer-events-none">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
@@ -40,14 +38,10 @@ const Footer = () => {
           
           <div className="mt-12 pt-8 border-t border-white/15 text-center relative">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-            <p className="text-sm text-muted-foreground">
-              © 2024 Iris. All rights reserved. Iris is a trademark of Iris Technologies Inc.
-            </p>
+            <p className="text-sm text-muted-foreground">© 2024 Iris. All rights reserved. Iris is a trademark of Minro Inc.</p>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
