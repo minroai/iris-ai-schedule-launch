@@ -21,33 +21,31 @@ const HeroSection = () => {
               </div>
               
               <div className="space-y-6">
-                 <h1 className="text-5xl lg:text-7xl font-black tracking-tight">
-                   <span className="text-foreground">Meet</span>{" "}
-                   <span className="relative inline-block">
-                     <span 
-                       className="bg-gradient-to-r from-purple-200 via-blue-200 to-emerald-200 bg-clip-text text-transparent animate-glass-float drop-shadow-lg"
-                       style={{
-                         backgroundSize: '300% 300%',
-                         backgroundImage: 'linear-gradient(60deg, #c4b5fd, #93c5fd, #6ee7b7, #a78bfa, #67e8f9)',
-                         WebkitBackgroundClip: 'text',
-                         WebkitTextFillColor: 'transparent',
-                         textShadow: '0 0 30px rgba(196, 181, 253, 0.4), 0 0 60px rgba(147, 197, 253, 0.3)',
-                         filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.6))'
-                       }}
-                     >
-                       Iris
-                     </span>
-                     <span className="absolute inset-0 bg-gradient-to-r from-purple-200/20 via-blue-200/20 to-emerald-200/20 blur-md animate-glass-shimmer" 
-                           style={{
-                             backgroundSize: '300% 300%',
-                             backgroundImage: 'linear-gradient(60deg, #c4b5fd, #93c5fd, #6ee7b7, #a78bfa, #67e8f9)',
-                             filter: 'blur(12px)',
-                             zIndex: -1
-                           }}>
-                       Iris
-                     </span>
-                   </span>
-                 </h1>
+                <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
+                  <span className="text-foreground">Meet</span>{" "}
+                  <span className="relative inline-block">
+                    <span 
+                      className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+                      style={{
+                        backgroundSize: '200% 200%',
+                        backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      Iris
+                    </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 via-blue-400/30 to-emerald-400/30 blur-sm animate-glass-shimmer" 
+                          style={{
+                            backgroundSize: '200% 200%',
+                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            filter: 'blur(8px)',
+                            zIndex: -1
+                          }}>
+                      Iris
+                    </span>
+                  </span>
+                </h1>
                 
                 <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
                   Your AI lifestyle companion that helps you schedule your life and get shit done.
@@ -90,23 +88,17 @@ const HeroSection = () => {
               </div>
             </div>
             
-             {/* App Preview */}
-             <div className="relative">
-               <div className="relative mx-auto max-w-md lg:max-w-lg">
-                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
-                 <div className="absolute inset-0 rounded-3xl animate-glass-shimmer opacity-30"
-                      style={{
-                        background: 'linear-gradient(60deg, rgba(196, 181, 253, 0.15), rgba(147, 197, 253, 0.15), rgba(110, 231, 183, 0.15), rgba(167, 139, 250, 0.15), rgba(103, 232, 249, 0.15))',
-                        backgroundSize: '300% 300%',
-                        filter: 'blur(2px)'
-                      }} />
-                 <img 
-                   src={heroImage} 
-                   alt="Iris App Interface" 
-                   className="relative z-10 w-full h-auto rounded-3xl shadow-elegant border border-white/10"
-                 />
-               </div>
-             </div>
+            {/* App Preview */}
+            <div className="relative">
+              <div className="relative mx-auto max-w-md lg:max-w-lg">
+                <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
+                <img 
+                  src={heroImage} 
+                  alt="Iris App Interface" 
+                  className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
