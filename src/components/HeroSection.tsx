@@ -55,7 +55,7 @@ const HeroSection = () => {
                   variant="iridescent" 
                   size="lg"
                   className="text-lg px-8 py-6 rounded-2xl"
-                  onClick={() => document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('early-access-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
                 >
                   Join Early Access
                   <ArrowRight className="w-5 h-5" />

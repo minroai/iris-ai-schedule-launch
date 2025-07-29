@@ -90,9 +90,8 @@ const EarlyAccessSection = () => {
           </div>
           
           {/* Signup Form */}
-          <div className="max-w-md mx-auto" id="signup-form">
-            <div className="md:hidden h-16"></div> {/* Mobile spacer to center form better */}
-            <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+          <div className="max-w-md mx-auto">
+            <form id="early-access-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
               <div className="relative">
                 <Input
                   type="email"
