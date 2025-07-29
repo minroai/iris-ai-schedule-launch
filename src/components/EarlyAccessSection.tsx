@@ -6,14 +6,26 @@ import { useState } from "react";
 const EarlyAccessSection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [emailError, setEmailError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-      // Here you would typically send the email to your backend
-      console.log("Early access signup:", email);
+    setEmailError("");
+    
+    if (!email) {
+      setEmailError("Email address is required");
+      return;
     }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }
+    
+    setIsSubmitted(true);
+    // Here you would typically send the email to your backend
+    console.log("Early access signup:", email);
   };
 
   if (isSubmitted) {
@@ -79,16 +91,23 @@ const EarlyAccessSection = () => {
           
           {/* Signup Form */}
           <div className="max-w-md mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4" noValidate>
               <div className="relative">
                 <Input
                   type="email"
                   placeholder="Enter your email address"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (emailError) setEmailError("");
+                  }}
                   className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-black"
-                  required
                 />
+                {emailError && (
+                  <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
+                    <p className="text-sm text-red-400 text-center">{emailError}</p>
+                  </div>
+                )}
               </div>
               
               <Button 
