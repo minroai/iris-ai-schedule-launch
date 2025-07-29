@@ -69,7 +69,7 @@ const EarlyAccessSection = () => {
               { title: "Exclusive Features", description: "Early access to premium AI capabilities" },
               { title: "Shape the Future", description: "Your feedback directly influences development" }
             ].map((benefit, index) => (
-              <div key={index} className="text-center p-6 rounded-3xl bg-gradient-to-br from-white/22 via-white/8 to-white/4 border border-white/25 shadow-glass-crystal hover:shadow-glass-crystal-hover transition-all duration-700 hover:-translate-y-1 backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/12 before:via-transparent before:to-blue-100/6 before:rounded-3xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/6 after:to-white/12 after:rounded-3xl after:pointer-events-none">
+              <div key={index} className="text-center p-6 rounded-3xl bg-gradient-to-br from-white/32 via-white/18 to-white/9 border border-white/35 shadow-glass-crystal hover:shadow-glass-crystal-hover transition-all duration-700 hover:-translate-y-1 backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/18 before:via-transparent before:to-blue-100/10 before:rounded-3xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/10 after:to-white/18 after:rounded-3xl after:pointer-events-none">
                 <h3 className="relative z-10 font-semibold text-foreground mb-2">{benefit.title}</h3>
                 <p className="relative z-10 text-sm text-muted-foreground">{benefit.description}</p>
               </div>

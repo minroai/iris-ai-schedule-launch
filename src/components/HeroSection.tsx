@@ -23,7 +23,28 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
-                  <span className="bg-gradient-primary bg-clip-text text-transparent">Iris</span>
+                  <span className="relative inline-block">
+                    <span 
+                      className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+                      style={{
+                        backgroundSize: '200% 200%',
+                        backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      Iris
+                    </span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 via-blue-400/30 to-emerald-400/30 blur-sm animate-glass-shimmer" 
+                          style={{
+                            backgroundSize: '200% 200%',
+                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            filter: 'blur(8px)',
+                            zIndex: -1
+                          }}>
+                      Iris
+                    </span>
+                  </span>
                 </h1>
                 
                 <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
