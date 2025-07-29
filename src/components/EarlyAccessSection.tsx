@@ -33,8 +33,8 @@ const EarlyAccessSection = () => {
       <section className="py-24 bg-gradient-subtle">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center space-y-8">
-            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-white/30 via-white/15 to-white/8 border border-white/35 backdrop-blur-xl flex items-center justify-center shadow-glass-hero relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-green-200/20 before:via-transparent before:to-emerald-200/10 before:rounded-full after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/15 after:to-white/25 after:rounded-full after:pointer-events-none">
-              <CheckCircle className="w-10 h-10 text-primary relative z-10" />
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-white/25 via-white/10 to-white/5 border border-white/30 shadow-glass-elegant backdrop-blur-xl flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-emerald-100/20 before:via-green-100/10 before:to-emerald-200/15 before:rounded-full after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/10 after:to-white/20 after:rounded-full after:pointer-events-none">
+              <CheckCircle className="w-10 h-10 text-emerald-400 relative z-10 drop-shadow-lg" />
             </div>
             
             <div className="space-y-4">
@@ -46,12 +46,12 @@ const EarlyAccessSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                variant="premium" 
+                variant="hero" 
                 size="lg"
-                className="text-lg px-8 py-6 rounded-2xl"
+                className="text-lg px-8 py-6 rounded-2xl bg-gradient-to-br from-white/20 via-white/10 to-white/5 border border-white/25 shadow-glass-crystal hover:shadow-glass-crystal-hover backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/10 before:via-transparent before:to-blue-100/8 before:rounded-2xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/8 after:to-white/15 after:rounded-2xl after:pointer-events-none hover:scale-105 transition-all duration-300"
                 onClick={() => setIsSubmitted(false)}
               >
-                Sign up another email
+                <span className="relative z-10">Sign up another email</span>
               </Button>
             </div>
           </div>
