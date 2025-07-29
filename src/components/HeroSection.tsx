@@ -55,7 +55,18 @@ const HeroSection = () => {
                   variant="iridescent" 
                   size="lg"
                   className="text-lg px-8 py-6 rounded-2xl"
-                  onClick={() => document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => {
+                    const element = document.getElementById('early-access');
+                    if (element) {
+                      // Add extra offset for mobile to ensure input field is visible
+                      const offset = window.innerWidth < 768 ? 100 : 20;
+                      const elementPosition = element.offsetTop - offset;
+                      window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
                 >
                   Join Early Access
                   <ArrowRight className="w-5 h-5" />
