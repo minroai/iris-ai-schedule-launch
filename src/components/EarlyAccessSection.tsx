@@ -21,8 +21,8 @@ const EarlyAccessSection = () => {
       <section className="py-24 bg-gradient-subtle">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center space-y-8">
-            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-primary flex items-center justify-center shadow-elegant">
-              <CheckCircle className="w-10 h-10 text-primary-foreground" />
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-white/30 via-white/15 to-white/8 border border-white/35 backdrop-blur-xl flex items-center justify-center shadow-glass-hero relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-green-200/20 before:via-transparent before:to-emerald-200/10 before:rounded-full after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/15 after:to-white/25 after:rounded-full after:pointer-events-none">
+              <CheckCircle className="w-10 h-10 text-primary relative z-10" />
             </div>
             
             <div className="space-y-4">
@@ -69,9 +69,9 @@ const EarlyAccessSection = () => {
               { title: "Exclusive Features", description: "Early access to premium AI capabilities" },
               { title: "Shape the Future", description: "Your feedback directly influences development" }
             ].map((benefit, index) => (
-              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border shadow-card">
-                <h3 className="font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground">{benefit.description}</p>
+              <div key={index} className="text-center p-6 rounded-3xl bg-gradient-to-br from-white/22 via-white/8 to-white/4 border border-white/25 shadow-glass-crystal hover:shadow-glass-crystal-hover transition-all duration-700 hover:-translate-y-1 backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/12 before:via-transparent before:to-blue-100/6 before:rounded-3xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/6 after:to-white/12 after:rounded-3xl after:pointer-events-none">
+                <h3 className="relative z-10 font-semibold text-foreground mb-2">{benefit.title}</h3>
+                <p className="relative z-10 text-sm text-muted-foreground">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -85,7 +85,7 @@ const EarlyAccessSection = () => {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-6 text-lg rounded-2xl bg-card border-border shadow-card focus:shadow-soft transition-all duration-300"
+                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10"
                   required
                 />
               </div>
