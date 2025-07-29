@@ -86,7 +86,7 @@ const EarlyAccessSection = () => {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10"
+                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-black"
                   required
                 />
               </div>
