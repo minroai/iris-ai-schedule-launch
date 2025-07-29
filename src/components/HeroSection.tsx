@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div className="text-center lg:text-left space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-accent border border-border shadow-card">
                 <Sparkles className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-accent-foreground">AI-Powered Scheduling!</span>
+                <span className="text-sm font-medium text-accent-foreground">AI-Powered Scheduling</span>
               </div>
               
               <div className="space-y-6">
