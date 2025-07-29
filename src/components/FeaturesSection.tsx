@@ -35,7 +35,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-gradient-subtle">{/* Changed from bg-background */}
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -56,10 +56,10 @@ const FeaturesSection = () => {
               return (
                 <div 
                   key={index}
-                  className="group p-8 rounded-3xl bg-gradient-to-br from-white/35 via-white/20 to-white/10 border border-white/40 shadow-glass-crystal hover:shadow-glass-crystal-hover transition-all duration-700 hover:-translate-y-2 hover:scale-[1.02] backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-200/20 before:via-transparent before:to-blue-200/12 before:rounded-3xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/12 after:to-white/20 after:rounded-3xl after:pointer-events-none"
+                  className="group p-8 rounded-3xl bg-gradient-to-br from-card/90 via-card/70 to-card/50 border border-white/10 shadow-glass-subtle hover:shadow-glass-crystal transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01] backdrop-blur-xl relative overflow-hidden"
                 >
                   <div className="relative z-10 mb-6">
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/50 via-white/30 to-white/20 border border-white/40 backdrop-blur-lg flex items-center justify-center group-hover:from-white/60 group-hover:via-white/35 group-hover:to-white/25 transition-all duration-500 shadow-glass-subtle">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 border border-primary/20 backdrop-blur-lg flex items-center justify-center group-hover:from-primary/30 group-hover:via-primary/15 group-hover:to-primary/8 transition-all duration-500 shadow-glass-subtle">
                       <Icon className="w-7 h-7 text-primary relative z-10" />
                     </div>
                   </div>
