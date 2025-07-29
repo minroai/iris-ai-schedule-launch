@@ -24,37 +24,25 @@ const HeroSection = () => {
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="relative inline-block">
-                    {/* Background glow for visibility */}
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/40 via-blue-400/40 to-emerald-400/40 blur-xl animate-glass-shimmer rounded-lg" 
-                          style={{
-                            backgroundSize: '200% 200%',
-                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
-                            filter: 'blur(20px)',
-                            zIndex: -1
-                          }}>
-                    </span>
-                    {/* Main text with enhanced visibility */}
                     <span 
-                      className="relative bg-gradient-to-r from-purple-300 via-blue-300 to-emerald-300 bg-clip-text text-transparent animate-glass-float font-black"
+                      className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
                       style={{
                         backgroundSize: '200% 200%',
-                        backgroundImage: 'linear-gradient(45deg, #c084fc, #93c5fd, #6ee7b7, #c084fc, #67e8f9)',
+                        backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
                         WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        textShadow: '0 0 30px rgba(168, 85, 247, 0.5), 0 0 60px rgba(59, 130, 246, 0.3)',
-                        filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
+                        WebkitTextFillColor: 'transparent'
                       }}
                     >
                       Iris
                     </span>
-                    {/* Additional shimmer overlay */}
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-glass-shimmer rounded-lg" 
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 via-blue-400/30 to-emerald-400/30 blur-sm animate-glass-shimmer" 
                           style={{
-                            backgroundSize: '200% 100%',
-                            backgroundImage: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)',
-                            zIndex: 1,
-                            pointerEvents: 'none'
+                            backgroundSize: '200% 200%',
+                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            filter: 'blur(8px)',
+                            zIndex: -1
                           }}>
+                      Iris
                     </span>
                   </span>
                 </h1>
