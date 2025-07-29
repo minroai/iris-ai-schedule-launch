@@ -25,20 +25,20 @@ const HeroSection = () => {
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="relative inline-block">
                     <span 
-                      className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+                      className="bg-gradient-to-r from-purple-200 via-blue-200 to-emerald-200 bg-clip-text text-transparent animate-glass-float"
                       style={{
                         backgroundSize: '200% 200%',
-                        backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                        backgroundImage: 'linear-gradient(45deg, #ddd6fe, #bfdbfe, #a7f3d0, #e9d5ff, #bae6fd)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent'
                       }}
                     >
                       Iris
                     </span>
-                    <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 via-blue-400/30 to-emerald-400/30 blur-sm animate-glass-shimmer" 
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-200/20 via-blue-200/20 to-emerald-200/20 blur-sm animate-glass-shimmer" 
                           style={{
                             backgroundSize: '200% 200%',
-                            backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                            backgroundImage: 'linear-gradient(45deg, #ddd6fe, #bfdbfe, #a7f3d0, #e9d5ff, #bae6fd)',
                             filter: 'blur(8px)',
                             zIndex: -1
                           }}>
@@ -92,6 +92,12 @@ const HeroSection = () => {
             <div className="relative">
               <div className="relative mx-auto max-w-md lg:max-w-lg">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
+                <div className="absolute inset-0 rounded-3xl animate-glass-shimmer" 
+                     style={{
+                       backgroundSize: '200% 200%',
+                       backgroundImage: 'linear-gradient(45deg, transparent, rgba(221, 214, 254, 0.1), rgba(191, 219, 254, 0.1), rgba(167, 243, 208, 0.1), transparent)',
+                       filter: 'blur(1px)'
+                     }} />
                 <img 
                   src={heroImage} 
                   alt="Iris App Interface" 
