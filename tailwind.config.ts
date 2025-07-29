@@ -73,11 +73,11 @@ export default {
 				'elegant': 'var(--shadow-elegant)',
 				'soft': 'var(--shadow-soft)',
 				'card': 'var(--shadow-card)',
-				'glass': 'var(--shadow-glass)',
-				'glass-hover': 'var(--shadow-glass-hover)',
+				'glass-crystal': 'var(--shadow-glass-crystal)',
+				'glass-crystal-hover': 'var(--shadow-glass-crystal-hover)',
 				'glass-subtle': 'var(--shadow-glass-subtle)',
-				'glass-large': 'var(--shadow-glass-large)',
-				'glass-large-hover': 'var(--shadow-glass-large-hover)'
+				'glass-hero': 'var(--shadow-glass-hero)',
+				'glass-hero-hover': 'var(--shadow-glass-hero-hover)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
