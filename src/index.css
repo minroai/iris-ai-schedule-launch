@@ -40,11 +40,17 @@ All colors MUST be HSL.
     /* Minimal gradients */
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
     --gradient-glass: linear-gradient(135deg, hsl(0 0% 0% / 0.08), hsl(0 0% 0% / 0.02));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 97%));
 
     /* Sophisticated shadows */
     --shadow-minimal: 0 4px 24px -8px hsl(0 0% 0% / 0.1);
     --shadow-glass: 0 8px 32px -12px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.1);
     --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.2);
+    --shadow-glass-crystal: 0 25px 50px -12px hsl(0 0% 0% / 0.25), 0 0 0 1px hsl(0 0% 100% / 0.05), inset 0 1px 0 hsl(0 0% 100% / 0.1);
+    --shadow-glass-crystal-hover: 0 35px 60px -12px hsl(0 0% 0% / 0.35), 0 0 0 1px hsl(0 0% 100% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.2);
+    --shadow-glass-subtle: 0 4px 16px hsl(0 0% 0% / 0.1), inset 0 1px 0 hsl(0 0% 100% / 0.1);
+    --shadow-glass-hero: 0 20px 40px -8px hsl(0 0% 0% / 0.15), 0 0 0 1px hsl(0 0% 0% / 0.05);
+    --shadow-glass-hero-hover: 0 30px 60px -8px hsl(0 0% 0% / 0.25), 0 0 0 1px hsl(0 0% 0% / 0.1);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
