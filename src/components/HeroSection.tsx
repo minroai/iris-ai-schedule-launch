@@ -57,7 +57,7 @@ const HeroSection = () => {
                   muted 
                   loop 
                   playsInline
-                  className="relative z-10 w-full max-h-[500px] object-cover rounded-3xl shadow-elegant"
+                  className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
                 >
                   Your browser does not support the video tag.
                 </video>
