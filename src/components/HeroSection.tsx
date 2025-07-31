@@ -15,10 +15,6 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div className="text-center lg:text-left space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-br from-white/25 via-white/10 to-white/5 border border-white/30 shadow-glass-subtle backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/15 before:via-transparent before:to-blue-100/8 before:rounded-2xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/8 after:to-white/15 after:rounded-2xl after:pointer-events-none">
-                <Sparkles className="w-4 h-4 text-primary relative z-10" />
-                <span className="text-sm font-medium text-foreground relative z-10">AI-Powered Scheduling</span>
-              </div>
               
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
@@ -61,25 +57,8 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
                 
-                <Button 
-                  variant="hero" 
-                  size="lg"
-                  className="text-lg px-8 py-6 rounded-2xl"
-                >
-                  Watch Demo
-                </Button>
               </div>
               
-              <div className="flex items-center gap-8 justify-center lg:justify-start text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span>Free during beta</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span>iOS & Android</span>
-                </div>
-              </div>
             </div>
             
             {/* App Preview */}
