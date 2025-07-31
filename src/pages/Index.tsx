@@ -9,7 +9,9 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       <EarlyAccessSection />
-      
+      <footer className="py-8 text-center">
+        <p className="text-sm text-muted-foreground">© 2024 Iris. All rights reserved. Iris is a trademark of Minro Inc.</p>
+      </footer>
     </div>
   );
 };
