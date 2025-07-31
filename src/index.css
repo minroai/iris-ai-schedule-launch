@@ -94,19 +94,6 @@ All colors MUST be HSL.
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-  
-  @keyframes scroll-horizontal {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
-  .animate-scroll-horizontal {
-    animation: scroll-horizontal 20s linear infinite;
-  }
 
   .dark {
     --background: 222.2 84% 4.9%;

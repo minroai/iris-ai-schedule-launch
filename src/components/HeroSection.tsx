@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, FileText, GitBranch, MapPin, Calendar, MessageSquare } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/iris-app-hero.jpg";
 
 const HeroSection = () => {
@@ -18,7 +18,7 @@ const HeroSection = () => {
               
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
-                  <span className="text-foreground">meet</span>{" "}
+                  <span className="text-foreground">Meet</span>{" "}
                   <span 
                     className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
                     style={{
@@ -33,57 +33,17 @@ const HeroSection = () => {
                 </h1>
                 
                 <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
-                  calendar meets context
+                  Your AI lifestyle companion that helps you schedule your life and{" "}
+                  <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent font-bold">
+                    get shit done
+                  </span>
+                  .
                 </h2>
                 
-                {/* Connected Apps Scrolling Section */}
-                <div className="py-8">
-                  <div className="overflow-hidden relative">
-                    <div className="flex animate-scroll-horizontal gap-8 whitespace-nowrap">
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <Mail className="w-5 h-5 text-red-500" />
-                        <span className="text-sm font-medium">Gmail</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <FileText className="w-5 h-5 text-gray-700" />
-                        <span className="text-sm font-medium">Notion</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <GitBranch className="w-5 h-5 text-blue-600" />
-                        <span className="text-sm font-medium">Linear</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <MapPin className="w-5 h-5 text-green-600" />
-                        <span className="text-sm font-medium">Google Maps</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <Calendar className="w-5 h-5 text-blue-500" />
-                        <span className="text-sm font-medium">Calendar</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <MessageSquare className="w-5 h-5 text-purple-600" />
-                        <span className="text-sm font-medium">Slack</span>
-                      </div>
-                      {/* Duplicate for seamless loop */}
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <Mail className="w-5 h-5 text-red-500" />
-                        <span className="text-sm font-medium">Gmail</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <FileText className="w-5 h-5 text-gray-700" />
-                        <span className="text-sm font-medium">Notion</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <GitBranch className="w-5 h-5 text-blue-600" />
-                        <span className="text-sm font-medium">Linear</span>
-                      </div>
-                      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10">
-                        <MapPin className="w-5 h-5 text-green-600" />
-                        <span className="text-sm font-medium">Google Maps</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                  Iris uses advanced AI to intelligently organize your calendar, prioritize tasks, 
+                  and help you achieve more while maintaining perfect work-life balance.
+                </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
