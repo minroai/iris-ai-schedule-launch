@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/iris-app-hero.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-subtle" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -19,15 +17,12 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
-                  <span 
-                    className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
-                    style={{
-                      backgroundSize: '200% 200%',
-                      backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent'
-                    }}
-                  >
+                  <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float" style={{
+                  backgroundSize: '200% 200%',
+                  backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}>
                     Iris
                   </span>
                 </h1>
@@ -36,19 +31,14 @@ const HeroSection = () => {
                   Calendar meets Context
                 </h2>
                 
-                <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                  Iris uses advanced AI to intelligently organize your calendar, prioritize tasks, 
-                  and help you achieve more while maintaining perfect work-life balance.
-                </p>
+                
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button 
-                  variant="iridescent" 
-                  size="lg"
-                  className="text-lg px-8 py-6 rounded-2xl"
-                  onClick={() => document.getElementById('early-access-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-                >
+                <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+              })}>
                   Join Early Access
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -61,18 +51,12 @@ const HeroSection = () => {
             <div className="relative">
               <div className="relative mx-auto max-w-md lg:max-w-lg">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
-                <img 
-                  src={heroImage} 
-                  alt="Iris App Interface" 
-                  className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
-                />
+                <img src={heroImage} alt="Iris App Interface" className="relative z-10 w-full h-auto rounded-3xl shadow-elegant" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
