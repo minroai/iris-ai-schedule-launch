@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/iris-app-hero.jpg";
+import heroVideo from "@/assets/iris-app-hero-video.mp4";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background Elements */}
@@ -51,7 +51,16 @@ const HeroSection = () => {
             <div className="relative">
               <div className="relative mx-auto max-w-md lg:max-w-lg">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
-                <img src={heroImage} alt="Iris App Interface" className="relative z-10 w-full h-auto rounded-3xl shadow-elegant" />
+                <video 
+                  src={heroVideo} 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="relative z-10 w-full h-auto rounded-3xl shadow-elegant"
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
