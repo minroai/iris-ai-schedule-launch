@@ -8,43 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Minimal Black & White Theme */
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    /* Minimal White & Black Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 3%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 3%;
 
-    --popover: 0 0% 3%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 3%;
 
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 8%;
-    --secondary-foreground: 0 0% 92%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 8%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 0 0% 12%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
 
     /* Minimal gradients */
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 2%));
-    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.02));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 0% / 0.08), hsl(0 0% 0% / 0.02));
 
     /* Sophisticated shadows */
-    --shadow-minimal: 0 4px 24px -8px hsl(0 0% 0% / 0.3);
-    --shadow-glass: 0 8px 32px -12px hsl(0 0% 0% / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.1);
-    --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.4);
+    --shadow-minimal: 0 4px 24px -8px hsl(0 0% 0% / 0.1);
+    --shadow-glass: 0 8px 32px -12px hsl(0 0% 0% / 0.15), inset 0 1px 0 hsl(0 0% 100% / 0.1);
+    --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.2);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
