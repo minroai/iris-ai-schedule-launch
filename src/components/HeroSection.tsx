@@ -49,7 +49,7 @@ const HeroSection = () => {
             
             {/* App Preview */}
             <div className="relative">
-              <div className="relative mx-auto max-w-xs lg:max-w-sm">
+              <div className="relative mx-auto w-48 lg:w-64">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 scale-105" />
                 <video 
                   src={heroVideo} 
