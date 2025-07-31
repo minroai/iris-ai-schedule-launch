@@ -61,53 +61,67 @@ const EarlyAccessSection = () => {
   }
 
   return (
-    <section id="early-access" className="py-32 bg-muted/20">
+    <section id="early-access" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          {/* Header */}
-          <div className="space-y-8 mb-16">
-            <h2 className="text-4xl lg:text-5xl font-light text-foreground">
-              Ready to get started?
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 space-y-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
+              Be among the first to experience
+              <span className="bg-gradient-primary bg-clip-text text-transparent"> the future</span>
             </h2>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed font-light">
-              Join early access to experience the future of intelligent calendar management
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Join thousands of professionals who are already transforming their productivity with Iris.
             </p>
           </div>
           
+          {/* Early Access Benefits */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {[
+              { title: "Free Beta Access", description: "Complete access during our beta period" },
+              { title: "Exclusive Features", description: "Early access to premium AI capabilities" },
+              { title: "Shape the Future", description: "Your feedback directly influences development" }
+            ].map((benefit, index) => (
+              <div key={index} className="text-center p-8 rounded-3xl bg-gradient-to-br from-card/70 via-card/50 to-card/30 border border-white/20 shadow-glass-crystal hover:shadow-glass-crystal-hover backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/3 rounded-3xl" />
+                <h3 className="relative z-10 font-semibold text-foreground mb-3">{benefit.title}</h3>
+                <p className="relative z-10 text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+          
           {/* Signup Form */}
-          <div className="max-w-sm mx-auto">
-            <form id="early-access-form" onSubmit={handleSubmit} className="space-y-6" noValidate>
+          <div className="max-w-md mx-auto">
+            <form id="early-access-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
               <div className="relative">
                 <Input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
                     if (emailError) setEmailError("");
                   }}
-                  className="w-full px-6 py-4 text-lg rounded-full bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-foreground/50"
-                  required
+                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-black"
                 />
                 {emailError && (
-                  <p className="text-destructive text-sm mt-2 text-left">{emailError}</p>
+                  <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
+                    <p className="text-sm text-red-400 text-center">{emailError}</p>
+                  </div>
                 )}
               </div>
               
               <Button 
-                type="submit" 
-                disabled={false}
-                variant="default"
+                type="submit"
+                variant="iridescent" 
                 size="lg"
-                className="w-full text-lg py-4 rounded-full font-medium"
+                className="w-full text-lg px-8 py-6 rounded-2xl"
               >
-                Join Early Access
-                <ArrowRight className="w-5 h-5 ml-2" />
+                Get Early Access
+                <ArrowRight className="w-5 h-5" />
               </Button>
             </form>
             
-            <p className="text-center text-sm text-muted-foreground mt-6">
+            <p className="text-center text-sm text-muted-foreground mt-4">
               We respect your privacy. Unsubscribe at any time.
             </p>
           </div>
