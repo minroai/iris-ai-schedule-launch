@@ -1,66 +1,130 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const EarlyAccessSection = () => {
   const [email, setEmail] = useState("");
-  const { toast } = useToast();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [emailError, setEmailError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      toast({
-        title: "You're on the list!",
-        description: "We'll notify you when Iris is ready.",
-      });
-      setEmail("");
+    setEmailError("");
+    
+    if (!email) {
+      setEmailError("Email address is required");
+      return;
     }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }
+    
+    setIsSubmitted(true);
+    // Here you would typically send the email to your backend
+    console.log("Early access signup:", email);
   };
 
+  if (isSubmitted) {
+    return (
+      <section className="py-24 bg-gradient-subtle">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center space-y-8">
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-white/25 via-white/10 to-white/5 border border-white/30 shadow-glass-elegant backdrop-blur-xl flex items-center justify-center relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-emerald-100/20 before:via-green-100/10 before:to-emerald-200/15 before:rounded-full after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/10 after:to-white/20 after:rounded-full after:pointer-events-none">
+              <CheckCircle className="w-10 h-10 text-emerald-400 relative z-10 drop-shadow-lg" />
+            </div>
+            
+            <div className="space-y-4">
+              <h2 className="text-4xl font-bold text-foreground">You're in!</h2>
+              <p className="text-xl text-muted-foreground">
+                We'll notify you as soon as Iris is ready. Get ready to transform how you manage your time.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                variant="hero" 
+                size="lg"
+                className="text-lg px-8 py-6 rounded-2xl bg-gradient-to-br from-white/20 via-white/10 to-white/5 border border-white/25 shadow-glass-crystal hover:shadow-glass-crystal-hover backdrop-blur-xl relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-purple-100/10 before:via-transparent before:to-blue-100/8 before:rounded-2xl after:absolute after:inset-[1px] after:bg-gradient-to-t after:from-transparent after:via-white/8 after:to-white/15 after:rounded-2xl after:pointer-events-none hover:scale-105 transition-all duration-300"
+                onClick={() => setIsSubmitted(false)}
+              >
+                <span className="relative z-10">Sign up another email</span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section id="waitlist-form" className="py-32 bg-background border-t border-border/10 relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-subtle" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-radial from-primary/3 to-transparent rounded-full blur-3xl animate-glass-float opacity-30" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-radial from-accent/3 to-transparent rounded-full blur-3xl animate-glass-float [animation-delay:3s] opacity-20" />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-2xl mx-auto text-center space-y-12">
-          <div className="space-y-6 animate-fade-in opacity-0 [animation-fill-mode:forwards]">
-            <h2 className="text-4xl lg:text-5xl font-light text-foreground">
-              Join the waitlist
+    <section id="early-access" className="py-24 bg-gradient-subtle">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 space-y-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
+              Be among the first to experience
+              <span className="bg-gradient-primary bg-clip-text text-transparent"> the future</span>
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Be among the first to experience intelligent calendar management.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Join thousands of professionals who are already transforming their productivity with Iris.
             </p>
           </div>
           
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-fade-in opacity-0 [animation-fill-mode:forwards] [animation-delay:200ms] group">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 rounded-full transition-all duration-500 focus:scale-[1.02] focus:shadow-glass-crystal"
-              required
-            />
-            <Button 
-              type="submit" 
-              className="group/btn px-8 py-3 rounded-full bg-primary text-primary-foreground hover:shadow-glass-hero-hover transition-all duration-500 shadow-glass-hero border border-border/20 hover:border-border/40 hover:scale-105 relative overflow-hidden"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                Join Waitlist
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000" />
-            </Button>
-          </form>
+          {/* Early Access Benefits */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {[
+              { title: "Free Beta Access", description: "Complete access during our beta period" },
+              { title: "Exclusive Features", description: "Early access to premium AI capabilities" },
+              { title: "Shape the Future", description: "Your feedback directly influences development" }
+            ].map((benefit, index) => (
+              <div key={index} className="text-center p-8 rounded-3xl bg-gradient-to-br from-card/70 via-card/50 to-card/30 border border-white/20 shadow-glass-crystal hover:shadow-glass-crystal-hover backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/3 rounded-3xl" />
+                <h3 className="relative z-10 font-semibold text-foreground mb-3">{benefit.title}</h3>
+                <p className="relative z-10 text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
           
-          <p className="text-sm text-muted-foreground/60 animate-fade-in opacity-0 [animation-fill-mode:forwards] [animation-delay:400ms]">
-            No spam. Unsubscribe anytime.
-          </p>
+          {/* Signup Form */}
+          <div className="max-w-md mx-auto">
+            <form id="early-access-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
+              <div className="relative">
+                <Input
+                  type="email"
+                  placeholder="Enter your email address"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (emailError) setEmailError("");
+                  }}
+                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-black"
+                />
+                {emailError && (
+                  <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
+                    <p className="text-sm text-red-400 text-center">{emailError}</p>
+                  </div>
+                )}
+              </div>
+              
+              <Button 
+                type="submit"
+                variant="iridescent" 
+                size="lg"
+                className="w-full text-lg px-8 py-6 rounded-2xl"
+              >
+                Get Early Access
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </form>
+            
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
