@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="text-center lg:text-left space-y-8">
+            <div className="text-center lg:text-left space-y-8 order-2 lg:order-1">
               
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="hidden lg:flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
                 behavior: 'smooth',
                 block: 'center'
@@ -48,7 +48,7 @@ const HeroSection = () => {
             </div>
             
             {/* App Preview */}
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <div className="relative mx-auto w-72 lg:w-80">
                 {/* Phone mockup frame */}
                 <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
@@ -73,6 +73,17 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-primary rounded-[2.5rem] blur-3xl opacity-10 scale-105" />
               </div>
             </div>
+          </div>
+          
+          {/* Mobile button below video */}
+          <div className="lg:hidden flex justify-center mt-8">
+            <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          })}>
+              Join Early Access
+              <ArrowRight className="w-5 h-5" />
+            </Button>
           </div>
         </div>
       </div>
