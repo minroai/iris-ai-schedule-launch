@@ -33,11 +33,7 @@ const HeroSection = () => {
                 </h1>
                 
                 <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
-                  Your AI lifestyle companion that helps you schedule your life and{" "}
-                  <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent font-bold">
-                    get shit done
-                  </span>
-                  .
+                  Calendar meets Context
                 </h2>
                 
                 <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
