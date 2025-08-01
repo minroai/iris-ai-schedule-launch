@@ -73,8 +73,9 @@ const EarlyAccess = () => {
                   You're In!
                 </h1>
                 <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
-                  Thank you for joining our early access program. We'll notify
-                  you when Iris is ready for you to try.
+                  Thanks for joining!
+                  <br />
+                  We'll send you an email when Iris is ready for you to try.
                 </p>
                 <div className="pt-6">
                   <Link to="/">
