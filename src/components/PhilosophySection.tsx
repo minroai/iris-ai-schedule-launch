@@ -17,7 +17,7 @@ const PhilosophySection = () => {
             </h2>
             
             <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto opacity-80">
-              90% of mental fatigue can be cured by systems that cater to how you work.
+              The problem isn't your discipline. It's that your systems weren't designed for how you work.
             </p>
             
             <div className="space-y-6 mt-16">
