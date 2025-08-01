@@ -5,50 +5,37 @@ const FeaturesSection = () => {
     {
       icon: Brain,
       title: "Understands how you work",
-      subtitle: "without needing a setup",
-      description: "Connects to Gmail, Notion, Linear, Slack, and more to learn your habits, behavior, and patterns — with almost zero manual input.",
+      description: "Learns your patterns from Gmail, Notion, Slack and past events with minimal setup or onboarding",
       iconBg: "bg-primary/10",
       iconColor: "text-primary"
     },
     {
       icon: Calendar,
-      title: "Makes scheduling feel",
-      subtitle: "effortless",
-      description: "Syncs calendars with friends, teammates, or clients. Finds ideal times, handles the back-and-forth, and books things instantly.",
+      title: "Schedules with friends",
+      description: "No back-and-forth. Iris finds the best time across calendars and books it for everyone",
       iconBg: "bg-secondary/10",
       iconColor: "text-secondary"
     },
     {
       icon: Mic,
-      title: "Text or talk to Iris",
-      subtitle: "on the go",
-      description: "Message or voice command Iris anytime — whether you're walking, commuting, or too lazy to type.",
+      title: "Talk or text anytime",
+      description: "Reschedule, adjust or check in with a quick voice note or message",
       iconBg: "bg-accent/10",
       iconColor: "text-accent"
     },
     {
       icon: Zap,
-      title: "Reschedules things",
-      subtitle: "when life shifts",
-      description: "If your day changes, Iris adapts in real time. Meetings move. Focus blocks shift. Nothing falls through the cracks.",
+      title: "Protects your priorities",
+      description: "Blocks time for what matters and turns Linear tasks into focus blocks",
       iconBg: "bg-primary-glow/10",
       iconColor: "text-primary-glow"
     },
     {
-      icon: Sprout,
-      title: "Builds a system around",
-      subtitle: "your side projects and life goals",
-      description: "Blocks time for what matters — like your startup, writing, workouts, or actual downtime — and protects it.",
+      icon: Utensils,
+      title: "Plans your day around your life",
+      description: "Recommends nearby meals and adjusts your schedule based on your energy, habits and real-world flow",
       iconBg: "bg-muted/20",
       iconColor: "text-foreground"
-    },
-    {
-      icon: Utensils,
-      title: "Even suggests meals",
-      subtitle: "based on your day and diet",
-      description: "Pulls from Maps and your habits to suggest nearby food spots that fit your schedule and vibe.",
-      iconBg: "bg-primary/5",
-      iconColor: "text-primary"
     }
   ];
 
@@ -96,9 +83,6 @@ const FeaturesSection = () => {
                         <h3 className="text-xl lg:text-2xl font-sf font-medium text-foreground leading-tight">
                           {feature.title}
                         </h3>
-                        <h4 className="text-xl lg:text-2xl font-sf font-light text-muted-foreground">
-                          {feature.subtitle}
-                        </h4>
                       </div>
                       <p className="text-base lg:text-lg text-muted-foreground font-sf font-light leading-relaxed">
                         {feature.description}
