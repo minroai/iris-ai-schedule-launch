@@ -23,7 +23,7 @@ const PhilosophySection = () => {
             <div className="space-y-6 mt-16">
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto">Iris analyzes your behavior across tools, learns your rhythm, and quietly builds systems in your calendar.</p>
               
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto">
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto mb-12">
                 So you can stop testing productivity hacks — and actually get things done.
               </p>
               
