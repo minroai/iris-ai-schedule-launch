@@ -4,110 +4,114 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
-      title: "Understands how you work — without needing a setup",
+      title: "Understands how you work",
+      subtitle: "without needing a setup",
       description: "Connects to Gmail, Notion, Linear, Slack, and more to learn your habits, behavior, and patterns — with almost zero manual input.",
-      gradient: "from-blue-500/20 to-purple-500/20",
-      iconColor: "text-blue-400",
-      glowColor: "shadow-blue-500/20"
+      iconBg: "bg-primary/10",
+      iconColor: "text-primary"
     },
     {
       icon: Calendar,
-      title: "Makes scheduling feel effortless",
+      title: "Makes scheduling feel",
+      subtitle: "effortless",
       description: "Syncs calendars with friends, teammates, or clients. Finds ideal times, handles the back-and-forth, and books things instantly.",
-      gradient: "from-green-500/20 to-emerald-500/20",
-      iconColor: "text-green-400",
-      glowColor: "shadow-green-500/20"
+      iconBg: "bg-secondary/10",
+      iconColor: "text-secondary"
     },
     {
       icon: Mic,
-      title: "Text or talk to Iris on the go",
+      title: "Text or talk to Iris",
+      subtitle: "on the go",
       description: "Message or voice command Iris anytime — whether you're walking, commuting, or too lazy to type.",
-      gradient: "from-orange-500/20 to-red-500/20",
-      iconColor: "text-orange-400",
-      glowColor: "shadow-orange-500/20"
+      iconBg: "bg-accent/10",
+      iconColor: "text-accent"
     },
     {
       icon: Zap,
-      title: "Reschedules things when life shifts",
+      title: "Reschedules things",
+      subtitle: "when life shifts",
       description: "If your day changes, Iris adapts in real time. Meetings move. Focus blocks shift. Nothing falls through the cracks.",
-      gradient: "from-yellow-500/20 to-orange-500/20",
-      iconColor: "text-yellow-400",
-      glowColor: "shadow-yellow-500/20"
+      iconBg: "bg-primary-glow/10",
+      iconColor: "text-primary-glow"
     },
     {
       icon: Sprout,
-      title: "Builds a system around your side projects and life goals",
+      title: "Builds a system around",
+      subtitle: "your side projects and life goals",
       description: "Blocks time for what matters — like your startup, writing, workouts, or actual downtime — and protects it.",
-      gradient: "from-teal-500/20 to-cyan-500/20",
-      iconColor: "text-teal-400",
-      glowColor: "shadow-teal-500/20"
+      iconBg: "bg-muted/20",
+      iconColor: "text-foreground"
     },
     {
       icon: Utensils,
-      title: "Even suggests meals based on your day and diet",
+      title: "Even suggests meals",
+      subtitle: "based on your day and diet",
       description: "Pulls from Maps and your habits to suggest nearby food spots that fit your schedule and vibe.",
-      gradient: "from-pink-500/20 to-rose-500/20",
-      iconColor: "text-pink-400",
-      glowColor: "shadow-pink-500/20"
+      iconBg: "bg-primary/5",
+      iconColor: "text-primary"
     }
   ];
 
   return (
-    <section id="features" className="py-24 px-4 bg-background">
-      {/* Header */}
-      <div className="container mx-auto text-center mb-16">
-        <h2 className="text-4xl lg:text-5xl font-bold font-sf mb-6 text-foreground">
-          Everything Iris Can Do
-        </h2>
-        <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light max-w-3xl mx-auto leading-relaxed">
-          Discover how Iris transforms your productivity by learning your habits and building systems around the way you actually work.
-        </p>
-      </div>
+    <section id="features" className="py-32 px-6 bg-background relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-20 left-1/4 w-96 h-96 bg-primary/2 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-primary-glow/2 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto relative z-10">
+        {/* Header */}
+        <div className="text-center mb-24 max-w-4xl mx-auto">
+          <h2 className="text-5xl lg:text-7xl font-sf font-light text-foreground mb-8 leading-tight">
+            Everything{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
+              Iris
+            </span>{" "}
+            can do
+          </h2>
+          <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed">
+            Discover how Iris transforms your productivity by learning your habits 
+            and building systems around the way you actually work.
+          </p>
+        </div>
 
-      {/* Features Grid */}
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid gap-8 md:gap-12">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <div 
-                key={index}
-                className="group relative"
-              >
-                <div className={`
-                  relative p-8 lg:p-12 rounded-3xl border border-border/50 backdrop-blur-sm
-                  bg-gradient-to-br ${feature.gradient}
-                  hover:border-border transition-all duration-700 hover:scale-[1.02]
-                  ${feature.glowColor} hover:shadow-2xl
-                `}>
-                  <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
+        {/* Features Grid */}
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div 
+                  key={index}
+                  className="group relative"
+                >
+                  <div className="relative p-8 lg:p-10 rounded-2xl border border-border/30 bg-card/30 backdrop-blur-sm hover:border-border/60 transition-all duration-500 hover:translate-y-[-4px] hover:shadow-elegant">
                     {/* Icon */}
-                    <div className={`
-                      p-4 rounded-2xl bg-background/10 backdrop-blur border border-border/20
-                      ${feature.glowColor} shadow-lg group-hover:scale-110 transition-transform duration-300
-                    `}>
-                      <Icon className={`w-8 h-8 ${feature.iconColor}`} />
+                    <div className={`w-16 h-16 rounded-xl ${feature.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className={`w-8 h-8 ${feature.iconColor}`} strokeWidth={1.5} />
                     </div>
 
                     {/* Content */}
-                    <div className="flex-1">
-                      <h3 className="text-2xl lg:text-3xl font-bold font-sf mb-4 text-foreground">
-                        {feature.title}
-                      </h3>
-                      <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed">
+                    <div className="space-y-4">
+                      <div>
+                        <h3 className="text-xl lg:text-2xl font-sf font-medium text-foreground leading-tight">
+                          {feature.title}
+                        </h3>
+                        <h4 className="text-xl lg:text-2xl font-sf font-light text-muted-foreground">
+                          {feature.subtitle}
+                        </h4>
+                      </div>
+                      <p className="text-base lg:text-lg text-muted-foreground font-sf font-light leading-relaxed">
                         {feature.description}
                       </p>
                     </div>
-                  </div>
 
-                  {/* Subtle background pattern */}
-                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
-                    <div className="w-full h-full rounded-full border border-current"></div>
+                    {/* Subtle hover indicator */}
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-subtle opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
