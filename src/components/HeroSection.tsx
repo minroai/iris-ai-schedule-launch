@@ -79,12 +79,12 @@ const HeroSection = () => {
           
           {/* Mobile button below video */}
           <div className="lg:hidden flex justify-center mt-8">
-            <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
+            <Button variant="iridescent" size="default" className="text-sm px-6 py-4 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
           })}>
               Join Early Access
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
         </div>
