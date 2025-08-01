@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl" />
       
-      <div className="relative z-10 container mx-auto px-6 py-20">
+      <div className="relative z-10 container mx-auto px-6 pt-8 pb-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             {/* Content */}
