@@ -18,6 +18,7 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-sf font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
+                  <span className="text-foreground/80 text-3xl lg:text-5xl">Calendar with Context</span>{" "}
                   <span className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float" style={{
                   backgroundSize: '200% 200%',
                   backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
