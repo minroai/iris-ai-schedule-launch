@@ -4,49 +4,55 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
+      emoji: "🧠",
       title: "Understands how you work",
-      subtitle: "without needing a setup",
-      description: "Connects to Gmail, Notion, Linear, Slack, and more to learn your habits, behavior, and patterns — with almost zero manual input.",
+      subtitle: "without setup",
+      description: "Iris connects to Gmail, Notion, Linear, Slack, and more — learning your habits and patterns with almost zero input. No forms. No onboarding. Just context.",
       iconBg: "bg-primary/10",
       iconColor: "text-primary"
     },
     {
       icon: Calendar,
-      title: "Makes scheduling feel",
-      subtitle: "effortless",
-      description: "Syncs calendars with friends, teammates, or clients. Finds ideal times, handles the back-and-forth, and books things instantly.",
+      emoji: "📆",
+      title: "Scheduling,",
+      subtitle: "solved",
+      description: "Share calendars with friends or teammates. Iris finds the best time, handles the back-and-forth, and books it instantly — so you don't have to.",
       iconBg: "bg-secondary/10",
       iconColor: "text-secondary"
     },
     {
       icon: Mic,
-      title: "Text or talk to Iris",
-      subtitle: "on the go",
-      description: "Message or voice command Iris anytime — whether you're walking, commuting, or too lazy to type.",
+      emoji: "🎙️",
+      title: "Talk or text your day",
+      subtitle: "into shape",
+      description: "Ask Iris anything, anytime — by voice or text. Whether you're walking, rushing, or half-asleep, she's ready to adjust your day on the fly.",
       iconBg: "bg-accent/10",
       iconColor: "text-accent"
     },
     {
       icon: Zap,
-      title: "Reschedules things",
-      subtitle: "when life shifts",
-      description: "If your day changes, Iris adapts in real time. Meetings move. Focus blocks shift. Nothing falls through the cracks.",
+      emoji: "🔁",
+      title: "Plans flex",
+      subtitle: "when life does",
+      description: "Running late? Plans changed? Iris reshuffles your day in real time — rescheduling meetings, protecting deep work, and keeping priorities in place.",
       iconBg: "bg-primary-glow/10",
       iconColor: "text-primary-glow"
     },
     {
       icon: Sprout,
-      title: "Builds a system around",
-      subtitle: "your side projects and life goals",
-      description: "Blocks time for what matters — like your startup, writing, workouts, or actual downtime — and protects it.",
+      emoji: "🔧",
+      title: "Protects time for what",
+      subtitle: "actually matters",
+      description: "From your side project to your sanity — Iris blocks time for what you care about, and quietly defends it from everything else.",
       iconBg: "bg-muted/20",
       iconColor: "text-foreground"
     },
     {
       icon: Utensils,
-      title: "Even suggests meals",
-      subtitle: "based on your day and diet",
-      description: "Pulls from Maps and your habits to suggest nearby food spots that fit your schedule and vibe.",
+      emoji: "🥗",
+      title: "Even plans",
+      subtitle: "your next meal",
+      description: "Iris pulls from your location, habits, and calendar to recommend food spots that fit your flow — and your day.",
       iconBg: "bg-primary/5",
       iconColor: "text-primary"
     }
@@ -62,11 +68,10 @@ const FeaturesSection = () => {
         {/* Header */}
         <div className="text-center mb-24 max-w-4xl mx-auto">
           <h2 className="text-5xl lg:text-7xl font-sf font-light text-foreground mb-8 leading-tight">
-            Everything{" "}
+            Get more done — with{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
-              Iris
-            </span>{" "}
-            can do
+              less effort, fewer tabs, and zero setup
+            </span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed">
             Discover how Iris transforms your productivity by learning your habits 
@@ -85,9 +90,9 @@ const FeaturesSection = () => {
                   className="group relative"
                 >
                   <div className="relative p-8 lg:p-10 rounded-2xl border border-border/30 bg-card/30 backdrop-blur-sm hover:border-border/60 transition-all duration-500 hover:translate-y-[-4px] hover:shadow-elegant">
-                    {/* Icon */}
-                    <div className={`w-16 h-16 rounded-xl ${feature.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className={`w-8 h-8 ${feature.iconColor}`} strokeWidth={1.5} />
+                    {/* Emoji Icon */}
+                    <div className="w-16 h-16 rounded-xl bg-background/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-3xl">{feature.emoji}</span>
                     </div>
 
                     {/* Content */}
