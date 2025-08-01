@@ -15,7 +15,7 @@ const HeroSection = () => {
             <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
               
               <div className="space-y-6">
-                <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
+                <h1 className="text-5xl lg:text-7xl font-sf font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float" style={{
                   backgroundSize: '200% 200%',
@@ -27,7 +27,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 
-                <h2 className="text-base lg:text-3xl font-semibold text-white">
+                <h2 className="text-base lg:text-3xl font-sf font-semibold text-white">
                   Plans your day from your real life
                 </h2>
                 
