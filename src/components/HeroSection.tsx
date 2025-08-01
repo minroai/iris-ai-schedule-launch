@@ -44,12 +44,15 @@ const HeroSection = () => {
               </div>
               
               <div className="hidden lg:flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link to="/early-access">
+                <a href="#early-access" onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
+                }}>
                   <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl">
                     Join Early Access
                     <ArrowRight className="w-5 h-5" />
                   </Button>
-                </Link>
+                </a>
                 
                 
               </div>
@@ -83,12 +86,15 @@ const HeroSection = () => {
           
           {/* Mobile buttons below video */}
           <div className="lg:hidden flex flex-col gap-3 items-center mt-8">
-            <Link to="/early-access">
+            <a href="#early-access" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               <Button variant="iridescent" size="default" className="text-sm px-6 py-4 rounded-2xl">
                 Join Early Access
                 <ArrowRight className="w-4 h-4" />
               </Button>
-            </Link>
+            </a>
             
           </div>
         </div>

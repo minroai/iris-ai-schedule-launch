@@ -8,12 +8,8 @@ const PhilosophySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-16">
           {/* Heading */}
-          <h2 className="text-3xl lg:text-5xl font-sf font-light text-foreground leading-tight tracking-tight">
-            <span className="text-white font-medium">This isn't a new system.</span>
-            <br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
-              It's the first one that fits you.
-            </span>
+          <h2 className="text-4xl lg:text-5xl font-sf font-medium text-foreground leading-tight tracking-tight">
+            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">Iris turns it into a "system"</span>
           </h2>
 
           {/* Subtext */}
@@ -23,7 +19,7 @@ const PhilosophySection = () => {
 
           {/* Integrations */}
           <div className="space-y-8">
-            <h3 className="text-xl font-medium text-muted-foreground">Iris integrates with:</h3>
+            <h3 className="text-xl font-medium text-muted-foreground">Integrates with:</h3>
 
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center items-center max-w-3xl mx-auto">
               {/* Repeat this block for each integration */}
