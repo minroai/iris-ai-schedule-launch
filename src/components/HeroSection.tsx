@@ -56,7 +56,17 @@ const HeroSection = () => {
                   <div className="relative bg-black rounded-[2.25rem] overflow-hidden">
                     {/* Minimal notch */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-black rounded-b-xl z-10"></div>
-                    <video src={heroVideo} autoPlay muted loop playsInline className="w-full h-auto rounded-[2.25rem]">
+                    <video 
+                      src={heroVideo} 
+                      autoPlay 
+                      muted 
+                      loop 
+                      playsInline 
+                      className="w-full h-auto rounded-[2.25rem]"
+                      ref={(video) => {
+                        if (video) video.playbackRate = 1.25;
+                      }}
+                    >
                       Your browser does not support the video tag.
                     </video>
                   </div>
