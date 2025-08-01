@@ -26,7 +26,7 @@ const PhilosophySection = () => {
               </p>
               
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70 animate-fade-in [animation-delay:1.5s] opacity-0">
-                Our goal is to help you stop forcing productivity and just flow.
+                So you can stop testing productivity hacks — and actually get things done.
               </p>
             </div>
           </div>
