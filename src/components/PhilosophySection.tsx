@@ -30,7 +30,7 @@ const PhilosophySection = () => {
               {/* Integration Logos */}
               <div className="flex flex-col items-center space-y-8 mt-16">
                 {/* First Block - Calendar Apps */}
-                <div className="flex items-center justify-center space-x-8">
+                <div className="flex items-center justify-center space-x-8 border border-white/20 rounded-xl px-8 py-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
                     <img src="/src/assets/logos/calendar.png" alt="Apple Calendar" className="w-8 h-8" />
                   </div>
