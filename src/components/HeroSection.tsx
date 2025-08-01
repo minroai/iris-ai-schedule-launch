@@ -36,7 +36,7 @@ const HeroSection = () => {
                     Iris
                   </span>
                 </h1>
-                <p className="text-gray-700 text-xl lg:text-4xl">Calendar with Context</p>
+                <p className="text-gray-700 text-xl lg:text-4xl">Smarter than Scheduling</p>
                 
                 
                 
