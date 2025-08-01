@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl" />
       
-      <div className="relative z-10 container mx-auto px-6 pt-8 pb-20">
+      <div className="relative z-10 container mx-auto px-6 py-8 lg:py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center px-4 sm:px-8 lg:px-[50px]">
             {/* Content */}
@@ -41,7 +41,15 @@ const HeroSection = () => {
               </div>
               
               <div className="hidden lg:flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                {/* Desktop Join Early Access button removed since it's moved up */}
+                <a href="#early-access" onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
+                }}>
+                  <Button variant="default" size="lg" className="text-lg px-8 py-6 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition-all duration-300">
+                    Join Early Access
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </a>
               </div>
               
             </div>

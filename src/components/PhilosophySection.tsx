@@ -9,7 +9,7 @@ const PhilosophySection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-16">
           {/* Heading */}
           <h2 className="text-4xl lg:text-5xl font-sf font-medium text-black leading-tight tracking-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">Iris turns your events into a system.</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">Smarter than Scheduling</span>
           </h2>
 
           {/* Subtext */}
@@ -18,7 +18,7 @@ const PhilosophySection = () => {
           </p>
 
           {/* Integrations */}
-          <div className="space-y-8">
+          <div className="space-y-4 md:space-y-8">
             <h3 className="text-xl font-medium text-gray-700">Integrates with:</h3>
 
             <div className="relative w-full max-w-4xl mx-auto py-8 overflow-visible">
