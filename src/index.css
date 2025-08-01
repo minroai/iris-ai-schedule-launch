@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 20% 5%;
-    --foreground: 220 15% 96%;
+    --background: 240 8% 6%;
+    --foreground: 240 6% 97%;
 
-    --card: 220 25% 8%;
-    --card-foreground: 220 15% 96%;
+    --card: 240 10% 9%;
+    --card-foreground: 240 6% 97%;
 
-    --popover: 220 25% 8%;
-    --popover-foreground: 220 15% 96%;
+    --popover: 240 10% 9%;
+    --popover-foreground: 240 6% 97%;
 
-    --primary: 215 100% 72%;
-    --primary-foreground: 220 20% 5%;
-    --primary-glow: 220 100% 78%;
+    --primary: 270 85% 68%;
+    --primary-foreground: 240 8% 6%;
+    --primary-glow: 275 90% 75%;
 
-    --secondary: 220 30% 12%;
-    --secondary-foreground: 220 15% 88%;
+    --secondary: 240 12% 14%;
+    --secondary-foreground: 240 6% 90%;
 
-    --muted: 220 30% 12%;
-    --muted-foreground: 220 15% 70%;
+    --muted: 240 12% 14%;
+    --muted-foreground: 240 6% 72%;
 
-    --accent: 215 85% 35%;
-    --accent-foreground: 215 100% 95%;
+    --accent: 270 70% 45%;
+    --accent-foreground: 270 85% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 25% 20%;
-    --input: 220 25% 20%;
-    --ring: 215 100% 72%;
+    --border: 240 15% 22%;
+    --input: 240 15% 22%;
+    --ring: 270 85% 68%;
 
-    /* Premium gradients with sophisticated color scheme */
-    --gradient-primary: linear-gradient(135deg, hsl(215 100% 72%), hsl(210 95% 78%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 4%), hsl(220 25% 8%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 100% 72% / 0.08), hsl(210 95% 78% / 0.04));
+    /* Premium gradients with elegant violet tones */
+    --gradient-primary: linear-gradient(135deg, hsl(270 85% 68%), hsl(265 80% 72%));
+    --gradient-subtle: linear-gradient(180deg, hsl(240 8% 5%), hsl(240 10% 9%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 85% 68% / 0.10), hsl(265 80% 72% / 0.05));
 
     /* Modern elegant shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(280 100% 70% / 0.25);
