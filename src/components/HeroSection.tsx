@@ -50,17 +50,35 @@ const HeroSection = () => {
             {/* App Preview */}
             <div className="relative order-2 lg:order-2">
               <div className="relative mx-auto max-w-md lg:max-w-lg">
-                <video 
-                  src={heroVideo} 
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                >
-                  Your browser does not support the video tag.
-                </video>
-                <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-3xl opacity-10 scale-105" />
+                {/* Phone Frame */}
+                <div className="relative bg-gray-900 rounded-[3rem] p-2 shadow-2xl">
+                  {/* Phone Screen Bezel */}
+                  <div className="bg-black rounded-[2.5rem] p-1">
+                    {/* Notch */}
+                    <div className="relative bg-black rounded-[2.25rem] overflow-hidden">
+                      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-10"></div>
+                      {/* Screen Content */}
+                      <div className="rounded-[2rem] overflow-hidden bg-black">
+                        <video 
+                          src={heroVideo} 
+                          autoPlay 
+                          muted 
+                          loop 
+                          playsInline
+                          className="w-full h-auto"
+                        >
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Side buttons */}
+                  <div className="absolute -left-1 top-20 w-1 h-8 bg-gray-800 rounded-l-lg"></div>
+                  <div className="absolute -left-1 top-32 w-1 h-12 bg-gray-800 rounded-l-lg"></div>
+                  <div className="absolute -left-1 top-48 w-1 h-12 bg-gray-800 rounded-l-lg"></div>
+                  <div className="absolute -right-1 top-28 w-1 h-16 bg-gray-800 rounded-r-lg"></div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-10 scale-105" />
               </div>
             </div>
           </div>
