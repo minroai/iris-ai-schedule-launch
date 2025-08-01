@@ -81,13 +81,13 @@ const EarlyAccessSection = () => {
               <div className="relative">
                 <Input
                   type="email"
-                  placeholder="Your email"
+                  placeholder="E-mail"
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
                     if (emailError) setEmailError("");
                   }}
-                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-white bg-transparent border border-white/20 focus-visible:border-white/40 hover:border-white/30 backdrop-blur-none shadow-none"
+                  className="w-full px-6 py-6 text-lg rounded-2xl bg-black/80 border border-gray-600/50 text-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-0 focus-visible:border-gray-500 hover:border-gray-500/70 shadow-none backdrop-blur-none"
                 />
                 {emailError && (
                   <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
