@@ -31,7 +31,7 @@ const FeaturesSection = () => {
     iconBg: "bg-muted/20",
     iconColor: "text-foreground"
   }];
-  return <section id="features" className="py-32 px-6 bg-background relative overflow-hidden">
+  return <section id="features" className="pt-16 pb-32 px-6 bg-background relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-20 left-1/4 w-96 h-96 bg-primary/2 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-primary-glow/2 rounded-full blur-3xl" />
