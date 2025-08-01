@@ -83,7 +83,7 @@ const HeroSection = () => {
                   <div className="absolute -left-[1px] top-36 w-[2px] h-10 bg-black rounded-l-sm"></div>
                   <div className="absolute -right-[1px] top-32 w-[2px] h-12 bg-black rounded-r-sm"></div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-10 scale-105" />
+                <div className="absolute inset-0 bg-gradient-primary rounded-[3rem] blur-3xl opacity-10 scale-110" />
               </div>
             </div>
           </div>
