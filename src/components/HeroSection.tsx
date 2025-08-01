@@ -36,25 +36,12 @@ const HeroSection = () => {
                     Iris
                   </span>
                 </h1>
-                <p className="text-gray-700 text-xl lg:text-4xl">Smarter than Scheduling</p>
-                
-                
-                
+           
                 
               </div>
               
               <div className="hidden lg:flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a href="#early-access" onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
-                }}>
-                  <Button variant="default" size="lg" className="text-lg px-8 py-6 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition-all duration-300">
-                    Join Early Access
-                    <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </a>
-                
-                
+                {/* Desktop Join Early Access button removed since it's moved up */}
               </div>
               
             </div>
