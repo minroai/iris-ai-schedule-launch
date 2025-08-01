@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroVideo from "@/assets/irisv0_final_final_finalpreview.mov";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
@@ -43,6 +44,12 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
                 
+                <Link to="/features">
+                  <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-2xl">
+                    See All Features
+                  </Button>
+                </Link>
+                
               </div>
               
             </div>
@@ -77,8 +84,8 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Mobile button below video */}
-          <div className="lg:hidden flex justify-center mt-8">
+          {/* Mobile buttons below video */}
+          <div className="lg:hidden flex flex-col gap-3 items-center mt-8">
             <Button variant="iridescent" size="default" className="text-sm px-6 py-4 rounded-2xl" onClick={() => document.getElementById('early-access-form')?.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
@@ -86,6 +93,12 @@ const HeroSection = () => {
               Join Early Access
               <ArrowRight className="w-4 h-4" />
             </Button>
+            
+            <Link to="/features">
+              <Button variant="outline" size="default" className="text-sm px-6 py-4 rounded-2xl">
+                See All Features
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
