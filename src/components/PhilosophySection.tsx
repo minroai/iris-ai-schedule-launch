@@ -19,6 +19,16 @@ const PhilosophySection = () => {
             <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto opacity-80">
               90% of mental fatigue can be cured by systems that cater to how you work.
             </p>
+            
+            <div className="space-y-6 mt-16">
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70">
+                Iris watches your behavior across tools, learns your rhythm, and builds systems around you.
+              </p>
+              
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70">
+                Our goal is to help you stop forcing productivity and just flow.
+              </p>
+            </div>
           </div>
         </div>
       </div>
