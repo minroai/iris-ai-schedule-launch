@@ -7,7 +7,7 @@ const PhilosophySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-12">
-            <h2 className="text-3xl lg:text-5xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
+            <h2 className="text-3xl lg:text-5xl font-sf font-light text-foreground leading-tight tracking-tight">
               <span className="text-white font-medium">
                 This isn't a new system.
               </span>
@@ -21,9 +21,9 @@ const PhilosophySection = () => {
             
             
             <div className="space-y-6 mt-16">
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1s] [animation-fill-mode:forwards]">Iris analyzes your behavior across tools, learns your rhythm, and quietly builds systems in your calendar.</p>
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto">Iris analyzes your behavior across tools, learns your rhythm, and quietly builds systems in your calendar.</p>
               
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1.5s] [animation-fill-mode:forwards]">
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto">
                 So you can stop testing productivity hacks — and actually get things done.
               </p>
             </div>
