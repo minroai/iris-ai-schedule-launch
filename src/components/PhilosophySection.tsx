@@ -19,7 +19,7 @@ const PhilosophySection = () => {
               .
             </h2>
             
-            <div className="space-y-4 animate-fade-in [animation-delay:0.5s] [animation-fill-mode:forwards] opacity-0">
+            <div className="space-y-4 animate-fade-in [animation-delay:0.5s] [animation-fill-mode:forwards]">
               <p className="text-xl lg:text-2xl text-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
                 The problem isn't your discipline.
               </p>
@@ -29,11 +29,11 @@ const PhilosophySection = () => {
             </div>
             
             <div className="space-y-6 mt-16">
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1s] [animation-fill-mode:forwards] opacity-0">
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1s] [animation-fill-mode:forwards]">
                 Iris watches your behavior across tools, learns your rhythm, and quietly builds systems around you.
               </p>
               
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1.5s] [animation-fill-mode:forwards] opacity-0">
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1.5s] [animation-fill-mode:forwards]">
                 So you can stop testing productivity hacks — and actually get things done.
               </p>
             </div>
