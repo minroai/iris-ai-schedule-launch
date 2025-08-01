@@ -8,7 +8,7 @@ const PhilosophySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-12">
-            <h2 className="text-4xl lg:text-6xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
+            <h2 className="text-3xl lg:text-5xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
               <span className="text-white font-medium">
                 This isn't a new system.
               </span>
