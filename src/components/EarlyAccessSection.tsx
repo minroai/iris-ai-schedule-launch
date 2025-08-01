@@ -63,41 +63,54 @@ const EarlyAccessSection = () => {
   return (
     <section id="early-access" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 space-y-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
+              Be among the first to experience
+              <span className="bg-gradient-primary bg-clip-text text-transparent"> the future</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Join thousands of professionals who are already transforming their productivity with Iris.
+            </p>
+          </div>
+          
+          
           {/* Signup Form */}
-          <form id="early-access-form" onSubmit={handleSubmit} className="space-y-6" noValidate>
-            <div className="relative">
-              <Input
-                type="email"
-                placeholder="E-mail"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (emailError) setEmailError("");
-                }}
-                className="w-full px-6 py-4 text-lg rounded-2xl bg-transparent border border-white/20 text-white placeholder:text-white/60 focus:border-white/40 focus:ring-0"
-              />
-              {emailError && (
-                <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
-                  <p className="text-sm text-red-400 text-center">{emailError}</p>
-                </div>
-              )}
-            </div>
-            
-            <div className="relative">
+          <div className="max-w-md mx-auto">
+            <form id="early-access-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
+              <div className="relative">
+                <Input
+                  type="email"
+                  placeholder="Enter your email address"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (emailError) setEmailError("");
+                  }}
+                  className="w-full px-6 py-6 text-lg rounded-2xl relative z-10 text-black"
+                />
+                {emailError && (
+                  <div className="mt-2 p-3 rounded-xl bg-gradient-to-br from-red-500/10 via-red-400/5 to-red-500/5 border border-red-400/20 backdrop-blur-sm">
+                    <p className="text-sm text-red-400 text-center">{emailError}</p>
+                  </div>
+                )}
+              </div>
+              
               <Button 
                 type="submit"
-                className="w-full text-white/80 px-6 py-4 rounded-2xl bg-transparent border border-white/20 hover:bg-white/5 hover:border-white/30 transition-all duration-300 relative overflow-hidden group"
+                variant="iridescent" 
+                size="default"
+                className="w-full text-sm px-6 py-4 rounded-xl"
               >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  Get early access
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-                {/* Subtle gradient glow effect */}
-                <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-orange-400/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                Get Early Access
+                <ArrowRight className="w-4 h-4" />
               </Button>
-            </div>
-          </form>
+            </form>
+            
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
