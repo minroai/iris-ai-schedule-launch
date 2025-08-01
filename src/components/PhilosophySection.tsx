@@ -26,6 +26,47 @@ const PhilosophySection = () => {
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto">
                 So you can stop testing productivity hacks — and actually get things done.
               </p>
+              
+              {/* Integration Logos */}
+              <div className="flex flex-col items-center space-y-8 mt-16">
+                {/* First Block - Calendar Apps */}
+                <div className="flex items-center justify-center space-x-8">
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/calendar.png" alt="Apple Calendar" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/calendar.png" alt="Google Calendar" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/calendar.png" alt="Outlook" className="w-8 h-8" />
+                  </div>
+                </div>
+                
+                {/* Plus Sign */}
+                <div className="text-primary text-2xl font-light">+</div>
+                
+                {/* Second Block - Productivity Apps */}
+                <div className="flex items-center justify-center space-x-8">
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/slack.svg" alt="Slack" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/gmail.svg" alt="Gmail" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/notion.png" alt="Notion" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <img src="/src/assets/logos/linear.png" alt="Linear" className="w-8 h-8" />
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <span className="text-xs text-muted-foreground">Docs</span>
+                  </div>
+                  <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
+                    <span className="text-xs text-muted-foreground">Cal</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
