@@ -46,7 +46,7 @@ const PhilosophySection = () => {
                 <div className="text-primary text-2xl font-light">+</div>
                 
                 {/* Second Block - Productivity Apps */}
-                <div className="flex items-center justify-center space-x-8">
+                <div className="flex items-center justify-center space-x-8 animate-marquee">
                   <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
                     <img src="/src/assets/logos/slack.svg" alt="Slack" className="w-8 h-8" />
                   </div>
