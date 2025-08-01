@@ -1,6 +1,4 @@
 import HeroSection from "@/components/HeroSection";
-import IntegrationsSection from "@/components/IntegrationsSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import FeaturesShowcase from "@/components/FeaturesShowcase";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import Footer from "@/components/Footer";
@@ -9,8 +7,6 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <IntegrationsSection />
-      <FeaturesSection />
       <FeaturesShowcase />
       <EarlyAccessSection />
       <footer className="py-8 text-center">
