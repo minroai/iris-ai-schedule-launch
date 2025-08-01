@@ -28,7 +28,7 @@ const HeroSection = () => {
                 </h1>
                 
                 <h2 className="text-base lg:text-3xl font-semibold text-white">
-                  Calendar meets Context
+                  Plans your day from your real life
                 </h2>
                 
                 
