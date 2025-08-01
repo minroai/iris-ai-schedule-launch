@@ -8,8 +8,8 @@ const PhilosophySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-16">
           {/* Heading */}
-          <h2 className="text-4xl lg:text-5xl font-sf font-medium text-black leading-tight tracking-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">Smarter than Scheduling</span>
+          <h2 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight">
+            <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Smarter than Scheduling</span>
           </h2>
 
           {/* Subtext */}
