@@ -44,15 +44,6 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
                 
-                <button 
-                  onClick={() => document.getElementById('features')?.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                  })}
-                  className="text-lg px-8 py-6 rounded-2xl border border-border/50 bg-background/10 text-foreground hover:bg-background/20 transition-colors duration-200"
-                >
-                  See All Features
-                </button>
                 
               </div>
               
@@ -98,15 +89,6 @@ const HeroSection = () => {
               <ArrowRight className="w-4 h-4" />
             </Button>
             
-            <button 
-              onClick={() => document.getElementById('features')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              })}
-              className="text-sm px-6 py-4 rounded-2xl border border-border/50 bg-background/10 text-foreground hover:bg-background/20 transition-colors duration-200"
-            >
-              See All Features
-            </button>
           </div>
         </div>
       </div>
