@@ -124,13 +124,23 @@ export default {
 						transform: 'translateY(5px) rotate(-1deg)',
 						filter: 'hue-rotate(240deg)'
 					}
+				},
+				'marquee': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' }
+				},
+				'marquee-reverse': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(0%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'glass-shimmer': 'glass-shimmer 3s ease-in-out infinite',
-				'glass-float': 'glass-float 6s ease-in-out infinite'
+				'glass-float': 'glass-float 6s ease-in-out infinite',
+				'marquee': 'marquee 25s linear infinite',
+				'marquee-reverse': 'marquee-reverse 25s linear infinite'
 			}
 		}
 	},
