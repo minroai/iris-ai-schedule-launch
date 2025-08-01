@@ -51,7 +51,7 @@ const HeroSection = () => {
             
             {/* App Preview */}
             <div className="relative order-2 lg:order-2">
-              <div className="relative mx-auto max-w-md lg:max-w-lg">
+              <div className="relative mx-auto w-72 lg:w-80">
                 {/* Phone Frame */}
                 <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl border border-gray-800/50">
                   {/* Screen Content */}
