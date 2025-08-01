@@ -1,15 +1,19 @@
 import HeroSection from "@/components/HeroSection";
 import PhilosophySection from "@/components/PhilosophySection";
-import FeaturesSection from "@/components/FeaturesSection";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <HeroSection />
-      <PhilosophySection />
-      <FeaturesSection />
-      <EarlyAccessSection />
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div className="snap-start snap-always">
+        <HeroSection />
+      </div>
+      <div className="snap-start snap-always">
+        <PhilosophySection />
+      </div>
+      <div className="snap-start snap-always">
+        <EarlyAccessSection />
+      </div>
     </div>
   );
 };
