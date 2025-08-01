@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="text-center lg:text-left space-y-8 order-2 lg:order-1">
+            <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
               
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
@@ -48,7 +48,7 @@ const HeroSection = () => {
             </div>
             
             {/* App Preview */}
-            <div className="relative order-1 lg:order-2">
+            <div className="relative order-2 lg:order-2">
               <div className="relative mx-auto w-72 lg:w-80">
                 {/* Phone mockup frame */}
                 <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
