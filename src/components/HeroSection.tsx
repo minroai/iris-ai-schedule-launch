@@ -19,17 +19,19 @@ const HeroSection = () => {
                 <h1 className="text-5xl lg:text-7xl font-sf font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
 <span
-  className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+  className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent"
   style={{
     backgroundImage:
       "linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)",
     backgroundSize: "200% 200%",
     backgroundRepeat: "repeat",
-    backgroundClip: "text",
     WebkitBackgroundClip: "text",
-    color: "transparent",
     WebkitTextFillColor: "transparent",
-    willChange: "background-position"
+    backgroundClip: "text",
+    color: "transparent",
+    willChange: "background-position",
+    display: "inline-block",
+    animation: "gradient-shift 3s ease-in-out infinite"
   }}
 >
   Iris
