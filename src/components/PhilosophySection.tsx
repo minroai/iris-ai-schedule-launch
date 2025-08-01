@@ -7,7 +7,7 @@ const PhilosophySection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="space-y-8">
+          <div className="space-y-12">
             <h2 className="text-4xl lg:text-6xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
               Discipline meets{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
@@ -16,9 +16,14 @@ const PhilosophySection = () => {
               .
             </h2>
             
-            <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto opacity-80 animate-fade-in [animation-delay:0.5s] opacity-0">
-              The problem isn't your discipline. It's that your systems weren't designed for how you work.
-            </p>
+            <div className="space-y-4 animate-fade-in [animation-delay:0.5s] opacity-0">
+              <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
+                The problem isn't your discipline.
+              </p>
+              <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
+                It's that your systems weren't designed for how you work.
+              </p>
+            </div>
             
             <div className="space-y-6 mt-16">
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70 animate-fade-in [animation-delay:1s] opacity-0">
