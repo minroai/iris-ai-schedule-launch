@@ -33,7 +33,7 @@ const PhilosophySection = () => {
                     { src: "/src/assets/logos/googlecal.png", alt: "Google Calendar" },
                     { src: "/src/assets/logos/applelogo.png", alt: "Apple Calendar" },
                     { src: "/src/assets/logos/slacklogo.png", alt: "Slack" },
-                    { src: "/src/assets/logos/gmaillogo.jpg", alt: "Gmail" },
+                    { src: "/src/assets/logos/gmaillogo.png", alt: "Gmail" },
                     { src: "/src/assets/logos/notionlogo.png", alt: "Notion" },
                     { src: "/src/assets/logos/mapslogo.png", alt: "Google Maps" },
                     { src: "/src/assets/logos/linearlogo.png", alt: "Linear" }
