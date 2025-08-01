@@ -14,7 +14,7 @@ const HeroSection = () => {
             {/* Content */}
             <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
               
-              <div className="space-y-6">
+              <div className="space-y-3 lg:space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
                   <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float" style={{
