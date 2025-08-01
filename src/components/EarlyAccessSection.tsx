@@ -38,7 +38,7 @@ const EarlyAccess = () => {
                 </h1>
 
                 <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
-                  Releasing a beta version of Iris soon.
+                  Private beta releasing soon. 
                 </p>
               </div>
 
