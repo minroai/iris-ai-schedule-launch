@@ -1,4 +1,4 @@
-import { Brain, Calendar, Mic, Zap, Sprout, Utensils } from "lucide-react";
+import { Brain, Calendar, Mic, Zap, Sprout, Utensils, RefreshCw } from "lucide-react";
 const FeaturesSection = () => {
   const features = [{
     icon: Brain,
@@ -30,6 +30,12 @@ const FeaturesSection = () => {
     description: "Recommends nearby meals and adjusts your schedule based on your energy, habits and real-world flow",
     iconBg: "bg-muted/20",
     iconColor: "text-foreground"
+  }, {
+    icon: RefreshCw,
+    title: "Plans for you when you don't",
+    description: "Missed a meeting? Overslept? Got distracted? Iris reshuffles priorities and rebooks what matters",
+    iconBg: "bg-accent/10",
+    iconColor: "text-accent"
   }];
   return <section id="features" className="pt-16 pb-32 px-6 bg-background relative overflow-hidden">
       {/* Background elements */}
