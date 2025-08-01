@@ -3,9 +3,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroVideo from "@/assets/irisv0_final_final_finalpreview.mov";
 const HeroSection = () => {
-  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+  return <section className="relative h-screen flex items-center justify-center bg-white overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-subtle" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl" />
       
@@ -16,29 +15,28 @@ const HeroSection = () => {
             <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
               
               <div className="space-y-6">
-                <h1 className="text-5xl lg:text-7xl font-sf font-bold tracking-tight">
-                  <span className="text-foreground">Meet</span>{" "}
-<span
-  className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent"
-  style={{
-    backgroundImage:
-      "linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)",
-    backgroundSize: "200% 200%",
-    backgroundRepeat: "repeat",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    backgroundClip: "text",
-    color: "transparent",
-    willChange: "background-position",
-    display: "inline-block",
-    animation: "gradient-shift 3s ease-in-out infinite"
-  }}
->
-  Iris
-</span>
-
+                <h1 className="text-5xl lg:text-8xl font-sf font-bold tracking-tight">
+                  <span className="text-black">Meet</span>{" "}
+                  <span
+                    className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)",
+                      backgroundSize: "200% 200%",
+                      backgroundRepeat: "repeat",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                      color: "transparent",
+                      willChange: "background-position",
+                      display: "inline-block",
+                      animation: "gradient-shift 3s ease-in-out infinite"
+                    }}
+                  >
+                    Iris
+                  </span>
                 </h1>
-                <p className="text-foreground/80 text-xl lg:text-3xl">Calendar with Context</p>
+                <p className="text-gray-700 text-xl lg:text-4xl">Calendar with Context</p>
                 
                 
                 
@@ -50,7 +48,7 @@ const HeroSection = () => {
                   e.preventDefault();
                   document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
                 }}>
-                  <Button variant="iridescent" size="lg" className="text-lg px-8 py-6 rounded-2xl">
+                  <Button variant="default" size="lg" className="text-lg px-8 py-6 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition-all duration-300">
                     Join Early Access
                     <ArrowRight className="w-5 h-5" />
                   </Button>
@@ -63,7 +61,7 @@ const HeroSection = () => {
             
             {/* App Preview */}
             <div className="relative order-2 lg:order-2">
-              <div className="relative mx-auto w-72 lg:w-80">
+              <div className="relative mx-auto w-72 lg:w-96">
                 {/* Phone Frame */}
                 <div className="relative bg-black rounded-[3rem] p-3 shadow-2xl border border-gray-800/50">
                   {/* Screen Content */}
@@ -92,7 +90,7 @@ const HeroSection = () => {
               e.preventDefault();
               document.getElementById('early-access')?.scrollIntoView({ behavior: 'smooth' });
             }}>
-              <Button variant="iridescent" size="default" className="text-sm px-6 py-4 rounded-2xl">
+              <Button variant="default" size="default" className="text-sm px-6 py-4 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition-all duration-300">
                 Join Early Access
                 <ArrowRight className="w-4 h-4" />
               </Button>

@@ -16,11 +16,10 @@ const EarlyAccess = () => {
   };
 
   return (
-    <div id="early-access" className="min-h-screen bg-gradient-hero relative">
+    <section id="early-access" className="h-screen bg-white relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-subtle" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/3 w-72 h-72 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/3 w-64 h-64 md:w-80 md:h-80 bg-primary-glow/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
         <div className="max-w-md w-full space-y-8 text-center">
@@ -30,7 +29,7 @@ const EarlyAccess = () => {
             <>
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight">
-                  <span className="text-foreground">Your day.</span>{" "}
+                  <span className="text-black">Your day.</span>{" "}
                   <span
                     className="bg-gradient-primary bg-clip-text text-transparent font-bold"
                   >
@@ -38,7 +37,7 @@ const EarlyAccess = () => {
                   </span>
                 </h1>
 
-                <p className="text-foreground/80 text-lg lg:text-xl font-sf font-light leading-relaxed">
+                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
                   Releasing a beta version of Iris soon.
                 </p>
               </div>
@@ -50,21 +49,21 @@ const EarlyAccess = () => {
                     placeholder="E-mail"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-14 text-lg bg-black border-none rounded-md text-white placeholder:text-gray-400 focus-visible:ring-0 focus-visible:ring-offset-0"
+                    className="h-14 text-lg bg-gray-100 border border-gray-200 rounded-md text-black placeholder:text-gray-500 focus-visible:ring-1 focus-visible:ring-primary/30 focus-visible:ring-offset-0"
                     required
                   />
 
-                  {/* Sleek Glowing Button */}
+                  {/* Sleek Button with Glass Effect */}
                   <button
                     type="submit"
                     disabled={!email}
-                    className="w-full relative overflow-hidden rounded-2xl border border-white/10 bg-[#0f0f0f] text-white px-8 py-4 text-lg font-sf font-medium transition duration-300 ease-out hover:scale-[1.02] focus:outline-none"
+                    className="w-full relative overflow-hidden rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] px-8 py-4 text-lg font-sf font-medium transition duration-300 ease-out hover:scale-[1.02] focus:outline-none"
                   >
                     <span className="relative z-10 flex items-center justify-center">
-                      Get early access
+                      Join Early Access
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </span>
-                    <span className="absolute inset-0 z-0 bg-gradient-primary opacity-20 blur-2xl animate-pulse" />
+                    <span className="absolute inset-0 z-0 bg-gradient-primary opacity-10 blur-2xl animate-pulse" />
                   </button>
                 </div>
               </form>
@@ -73,16 +72,16 @@ const EarlyAccess = () => {
             <>
               <div className="space-y-6">
                 <CheckCircle className="w-16 h-16 mx-auto text-primary" />
-                <h1 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight text-foreground">
+                <h1 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight text-black">
                   You're In!
                 </h1>
-                <p className="text-foreground/80 text-lg lg:text-xl font-sf font-light leading-relaxed">
+                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
                   Thank you for joining our early access program. We'll notify
                   you when Iris is ready for you to try.
                 </p>
                 <div className="pt-6">
                   <Link to="/">
-                    <button className="text-lg px-8 py-4 rounded-2xl border border-white/10 bg-transparent hover:bg-white/10 transition font-sf font-medium">
+                    <button className="text-lg px-8 py-4 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition font-sf font-medium">
                       Back to Home
                     </button>
                   </Link>
@@ -92,7 +91,7 @@ const EarlyAccess = () => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
