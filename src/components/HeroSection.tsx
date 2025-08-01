@@ -8,16 +8,16 @@ const HeroSection = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   
   return (
-    <section className="relative h-screen flex items-center md:items-center justify-center bg-white overflow-hidden pt-8 md:pt-0">
+    <section className="relative h-screen flex flex-col md:items-center justify-start md:justify-center bg-white overflow-hidden pt-4 md:pt-0">
       {/* Background Elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl" />
       
-      <div className="relative z-10 container mx-auto px-6 py-8 lg:py-12">
+      <div className="relative z-10 container mx-auto px-6 py-4 md:py-8 lg:py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center px-4 sm:px-8 lg:px-[50px]">
             {/* Content */}
-            <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
+            <div className="text-center lg:text-left space-y-6 md:space-y-8 order-1 lg:order-1 mt-4 md:mt-0">
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-8xl font-sf font-bold tracking-tight">
                   <span className="text-black">Meet</span>{" "}
