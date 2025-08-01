@@ -1,3 +1,6 @@
+import googleCalendar from "@/assets/logos/google-calendar.png";
+import appleCalendar from "@/assets/logos/apple-calendar.png";
+
 const PhilosophySection = () => {
   return <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
       {/* Subtle background elements */}
@@ -32,10 +35,10 @@ const PhilosophySection = () => {
                 {/* First Block - Calendar Apps */}
                 <div className="flex items-center justify-center space-x-8 border border-white/20 rounded-xl px-8 py-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
-                    <img src="/src/assets/logos/calendar.png" alt="Apple Calendar" className="w-8 h-8" />
+                    <img src={appleCalendar} alt="Apple Calendar" className="w-8 h-8" />
                   </div>
                   <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
-                    <img src="/src/assets/logos/calendar.png" alt="Google Calendar" className="w-8 h-8" />
+                    <img src={googleCalendar} alt="Google Calendar" className="w-8 h-8" />
                   </div>
                   <div className="flex items-center justify-center w-12 h-12 bg-white/5 rounded-lg">
                     <img src="/src/assets/logos/calendar.png" alt="Outlook" className="w-8 h-8" />
