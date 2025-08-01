@@ -113,11 +113,11 @@ const EarlyAccessSection = () => {
               <Button 
                 type="submit"
                 variant="iridescent" 
-                size="lg"
-                className="w-full text-lg px-8 py-6 rounded-2xl"
+                size="default"
+                className="w-full text-base px-6 py-4 rounded-xl"
               >
                 Get Early Access
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </form>
             
