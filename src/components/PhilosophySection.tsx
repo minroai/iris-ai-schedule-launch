@@ -11,7 +11,7 @@ const PhilosophySection = () => {
             <h2 className="text-4xl lg:text-6xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
               Discipline meets{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
-                systems
+                This isn't a new system. It's the first one that fits you
               </span>
               .
             </h2>
