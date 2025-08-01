@@ -28,9 +28,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 
-                <h2 className="text-base lg:text-3xl font-sf font-semibold text-white">
-                  Plans your day from your real life
-                </h2>
+                
                 
                 
               </div>
@@ -58,14 +56,7 @@ const HeroSection = () => {
                   <div className="relative bg-black rounded-[2.25rem] overflow-hidden">
                     {/* Minimal notch */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-black rounded-b-xl z-10"></div>
-                    <video 
-                      src={heroVideo} 
-                      autoPlay 
-                      muted 
-                      loop 
-                      playsInline
-                      className="w-full h-auto rounded-[2.25rem]"
-                    >
+                    <video src={heroVideo} autoPlay muted loop playsInline className="w-full h-auto rounded-[2.25rem]">
                       Your browser does not support the video tag.
                     </video>
                   </div>

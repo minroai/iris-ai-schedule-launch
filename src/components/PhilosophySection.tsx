@@ -1,6 +1,5 @@
 const PhilosophySection = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
       {/* Subtle background elements */}
       <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-primary/2 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-primary-glow/2 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -19,19 +18,10 @@ const PhilosophySection = () => {
               .
             </h2>
             
-            <div className="space-y-4 animate-fade-in [animation-delay:0.5s] [animation-fill-mode:forwards]">
-              <p className="text-xl lg:text-2xl text-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
-                The problem isn't your discipline.
-              </p>
-              <p className="text-xl lg:text-2xl text-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
-                It's that your systems weren't designed for how you work.
-              </p>
-            </div>
+            
             
             <div className="space-y-6 mt-16">
-              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1s] [animation-fill-mode:forwards]">
-                Iris watches your behavior across tools, learns your rhythm, and quietly builds systems around you.
-              </p>
+              <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1s] [animation-fill-mode:forwards]">Iris analyzes your behavior across tools, learns your rhythm, and quietly builds systems in your calendar.</p>
               
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto animate-fade-in [animation-delay:1.5s] [animation-fill-mode:forwards]">
                 So you can stop testing productivity hacks — and actually get things done.
@@ -40,8 +30,6 @@ const PhilosophySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PhilosophySection;
