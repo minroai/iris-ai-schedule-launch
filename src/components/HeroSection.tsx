@@ -30,7 +30,8 @@ const HeroSection = () => {
     backgroundClip: "text",
     color: "transparent",
     willChange: "background-position",
-    display: "inline-block"
+    display: "inline-block",
+    animation: "gradient-shift 3s ease-in-out infinite"
   }}
 >
   Iris
