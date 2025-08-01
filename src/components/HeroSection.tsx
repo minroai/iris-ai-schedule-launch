@@ -18,14 +18,23 @@ const HeroSection = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-sf font-bold tracking-tight">
                   <span className="text-foreground">Meet</span>{" "}
-                  <span className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float" style={{
-                  backgroundSize: '200% 200%',
-                  backgroundImage: 'linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}>
-                    Iris
-                  </span>
+<span
+  className="text-primary bg-gradient-to-r from-purple-400 via-blue-400 to-emerald-400 bg-clip-text text-transparent animate-glass-float"
+  style={{
+    backgroundImage:
+      "linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)",
+    backgroundSize: "200% 200%",
+    backgroundRepeat: "repeat",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+    WebkitTextFillColor: "transparent",
+    willChange: "background-position"
+  }}
+>
+  Iris
+</span>
+
                 </h1>
                 <p className="text-foreground/80 text-xl lg:text-3xl">Calendar with Context</p>
                 
