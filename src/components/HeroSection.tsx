@@ -27,6 +27,7 @@ const HeroSection = () => {
                     Iris
                   </span>
                 </h1>
+                <p className="text-foreground/80 text-3xl lg:text-5xl">Calendar with Context</p>
                 
                 
                 
