@@ -9,8 +9,12 @@ const PhilosophySection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-12">
             <h2 className="text-4xl lg:text-6xl font-sf font-light text-foreground leading-tight tracking-tight animate-fade-in">
+              <span className="text-white font-medium">
+                This isn't a new system.
+              </span>
+              <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
-                This isn't a new system. It's the first one that fits you
+                It's the first one that fits you
               </span>
               .
             </h2>
