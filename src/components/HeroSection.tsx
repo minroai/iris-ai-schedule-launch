@@ -11,7 +11,7 @@ const HeroSection = () => {
       
       <div className="relative z-10 container mx-auto px-6 pt-8 pb-20">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center px-[50px]">
             {/* Content */}
             <div className="text-center lg:text-left space-y-8 order-1 lg:order-1">
               
@@ -56,17 +56,9 @@ const HeroSection = () => {
                   <div className="relative bg-black rounded-[2.25rem] overflow-hidden">
                     {/* Minimal notch */}
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-black rounded-b-xl z-10"></div>
-                    <video 
-                      src={heroVideo} 
-                      autoPlay 
-                      muted 
-                      loop 
-                      playsInline 
-                      className="w-full h-auto rounded-[2.25rem]"
-                      ref={(video) => {
-                        if (video) video.playbackRate = 1.25;
-                      }}
-                    >
+                    <video src={heroVideo} autoPlay muted loop playsInline className="w-full h-auto rounded-[2.25rem]" ref={video => {
+                    if (video) video.playbackRate = 1.25;
+                  }}>
                       Your browser does not support the video tag.
                     </video>
                   </div>
