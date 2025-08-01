@@ -114,7 +114,7 @@ const EarlyAccessSection = () => {
                 type="submit"
                 variant="iridescent" 
                 size="default"
-                className="w-full text-base px-6 py-4 rounded-xl"
+                className="w-full text-sm px-6 py-4 rounded-xl"
               >
                 Get Early Access
                 <ArrowRight className="w-4 h-4" />
