@@ -22,7 +22,7 @@ const PhilosophySection = () => {
             
             <div className="space-y-6 mt-16">
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70">
-                Iris watches your behavior across tools, learns your rhythm, and builds systems around you.
+                Iris watches your behavior across tools, learns your rhythm, and quietly builds systems around you.
               </p>
               
               <p className="text-lg lg:text-xl text-muted-foreground font-sf font-light leading-relaxed max-w-2xl mx-auto opacity-70">
