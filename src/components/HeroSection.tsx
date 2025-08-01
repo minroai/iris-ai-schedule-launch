@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroVideo from "@/assets/IrisV0.mov";
+import heroVideo from "@/assets/irisv0_final_finalpreview.mov";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Background Elements */}
