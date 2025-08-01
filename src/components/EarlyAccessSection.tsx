@@ -29,15 +29,15 @@ const EarlyAccess = () => {
             <>
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight">
-                  <span className="text-black">Your day.</span>{" "}
-                  <span
-                    className="bg-gradient-primary bg-clip-text text-transparent font-bold"
+                  <div className="text-black mb-2 md:mb-3">Your day.</div>
+                  <div
+                    className="bg-gradient-primary bg-clip-text text-transparent font-bold mt-1 md:mt-2"
                   >
                     Designed for you.
-                  </span>
+                  </div>
                 </h1>
 
-                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
+                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed mt-4 md:mt-6">
                   Private beta releasing soon. 
                 </p>
               </div>
