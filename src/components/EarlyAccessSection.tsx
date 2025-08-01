@@ -16,28 +16,26 @@ const EarlyAccess = () => {
   };
 
   return (
-    <section id="early-access" className="h-screen bg-white relative overflow-hidden">
+    <section id="early-access" className="min-h-screen bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-1/4 left-1/3 w-72 h-72 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/3 w-64 h-64 md:w-80 md:h-80 bg-primary-glow/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
         <div className="max-w-md w-full space-y-8 text-center">
-          
 
           {!isSubmitted ? (
             <>
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-5xl font-sf font-bold tracking-tight">
                   <div className="text-black mb-2 md:mb-3">Your day.</div>
-                  <div
-                    className="bg-gradient-primary bg-clip-text text-transparent font-bold mt-1 md:mt-2"
-                  >
+                  <div className="bg-gradient-primary bg-clip-text text-transparent font-bold mt-1 md:mt-2">
                     Designed for you.
                   </div>
                 </h1>
-
-                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed mt-4 md:mt-6">
+                
+                {/* Updated margin here */}
+                <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed mt-10 md:mt-14">
                   Private beta releasing soon. 
                 </p>
               </div>
@@ -53,7 +51,6 @@ const EarlyAccess = () => {
                     required
                   />
 
-                  {/* Sleek Button with Glass Effect */}
                   <button
                     type="submit"
                     disabled={!email}
