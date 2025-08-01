@@ -25,6 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Copy assets to public directory
+        run: |
+          mkdir -p public/src/assets/logos
+          cp -r src/assets/logos/* public/src/assets/logos/ || echo "No logo files to copy"
+
       - name: Build Vite app
         run: npm run build
 
