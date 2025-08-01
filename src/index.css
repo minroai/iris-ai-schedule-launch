@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 8% 3%;
+    --background: 240 8% 6%;
     --foreground: 240 6% 97%;
 
     --card: 240 10% 9%;
@@ -140,67 +140,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground relative overflow-x-hidden;
-    background: 
-      radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.3) 0%, transparent 70%),
-      radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.25) 0%, transparent 60%),
-      radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.35) 0%, transparent 65%),
-      hsl(var(--background));
-    background-size: 100% 100%, 80% 80%, 90% 90%, 100% 100%;
-    animation: gradientShift 8s ease-in-out infinite;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      linear-gradient(45deg, rgba(139, 92, 246, 0.1) 0%, transparent 30%, rgba(255, 119, 198, 0.08) 70%, transparent 100%),
-      linear-gradient(-45deg, transparent 0%, rgba(120, 119, 198, 0.12) 50%, transparent 100%);
-    background-size: 300% 300%, 250% 250%;
-    animation: gradientMove 12s ease-in-out infinite;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%, 100% 0%, 50% 100%;
-    }
-    33% {
-      background-position: 100% 30%, 0% 100%, 0% 0%;
-    }
-    66% {
-      background-position: 30% 100%, 70% 30%, 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%, 100% 0%, 50% 100%;
-    }
-  }
-
-  @keyframes gradientMove {
-    0% {
-      background-position: 0% 0%, 100% 100%;
-      transform: rotate(0deg);
-    }
-    25% {
-      background-position: 100% 50%, 0% 50%;
-      transform: rotate(1deg);
-    }
-    50% {
-      background-position: 50% 100%, 50% 0%;
-      transform: rotate(0deg);
-    }
-    75% {
-      background-position: 0% 50%, 100% 50%;
-      transform: rotate(-1deg);
-    }
-    100% {
-      background-position: 0% 0%, 100% 100%;
-      transform: rotate(0deg);
-    }
+    @apply bg-background text-foreground;
   }
 }
