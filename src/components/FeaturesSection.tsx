@@ -40,11 +40,10 @@ const FeaturesSection = () => {
         {/* Header */}
         <div className="text-center mb-24 max-w-4xl mx-auto">
           <h2 className="text-5xl lg:text-7xl font-sf font-light text-foreground mb-8 leading-tight">
-            Everything{" "}
+            At its{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent font-medium">
-              Iris
-            </span>{" "}
-            can do
+              core
+            </span>,
           </h2>
           
         </div>
