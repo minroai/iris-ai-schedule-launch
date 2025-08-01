@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import FeaturesShowcase from "@/components/FeaturesShowcase";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import Footer from "@/components/Footer";
 
@@ -10,6 +11,7 @@ const Index = () => {
       <HeroSection />
       <IntegrationsSection />
       <FeaturesSection />
+      <FeaturesShowcase />
       <EarlyAccessSection />
       <footer className="py-8 text-center">
         <p className="text-sm text-muted-foreground">© 2024 Iris. All rights reserved. Iris is a trademark of Minro Inc.</p>
