@@ -74,20 +74,6 @@ const EarlyAccessSection = () => {
             </p>
           </div>
           
-          {/* Early Access Benefits */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              { title: "Free Beta Access", description: "Complete access during our beta period" },
-              { title: "Exclusive Features", description: "Early access to premium AI capabilities" },
-              { title: "Shape the Future", description: "Your feedback directly influences development" }
-            ].map((benefit, index) => (
-              <div key={index} className="text-center p-8 rounded-3xl bg-gradient-to-br from-card/70 via-card/50 to-card/30 border border-white/20 shadow-glass-crystal hover:shadow-glass-crystal-hover backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/3 rounded-3xl" />
-                <h3 className="relative z-10 font-semibold text-foreground mb-3">{benefit.title}</h3>
-                <p className="relative z-10 text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
           
           {/* Signup Form */}
           <div className="max-w-md mx-auto">
