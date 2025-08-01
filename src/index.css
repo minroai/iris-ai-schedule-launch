@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 4%;
-    --foreground: 240 8% 96%;
+    --background: 220 20% 5%;
+    --foreground: 220 15% 96%;
 
-    --card: 240 12% 8%;
-    --card-foreground: 240 8% 96%;
+    --card: 220 25% 8%;
+    --card-foreground: 220 15% 96%;
 
-    --popover: 240 12% 8%;
-    --popover-foreground: 240 8% 96%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 220 15% 96%;
 
-    --primary: 280 100% 70%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 285 100% 78%;
+    --primary: 215 100% 72%;
+    --primary-foreground: 220 20% 5%;
+    --primary-glow: 220 100% 78%;
 
-    --secondary: 240 15% 10%;
-    --secondary-foreground: 240 8% 88%;
+    --secondary: 220 30% 12%;
+    --secondary-foreground: 220 15% 88%;
 
-    --muted: 240 15% 10%;
-    --muted-foreground: 240 8% 68%;
+    --muted: 220 30% 12%;
+    --muted-foreground: 220 15% 70%;
 
-    --accent: 280 100% 25%;
-    --accent-foreground: 280 100% 90%;
+    --accent: 215 85% 35%;
+    --accent-foreground: 215 100% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 20% 18%;
-    --input: 240 20% 18%;
-    --ring: 280 100% 70%;
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 215 100% 72%;
 
-    /* Enhanced Gradients with better contrast */
-    --gradient-primary: linear-gradient(135deg, hsl(280 100% 70%), hsl(270 100% 75%));
-    --gradient-subtle: linear-gradient(180deg, hsl(240 10% 5%), hsl(240 12% 8%));
-    --gradient-hero: linear-gradient(135deg, hsl(280 100% 70% / 0.12), hsl(270 100% 75% / 0.06));
+    /* Premium gradients with sophisticated color scheme */
+    --gradient-primary: linear-gradient(135deg, hsl(215 100% 72%), hsl(210 95% 78%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 4%), hsl(220 25% 8%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 100% 72% / 0.08), hsl(210 95% 78% / 0.04));
 
     /* Modern elegant shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(280 100% 70% / 0.25);
