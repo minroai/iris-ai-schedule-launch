@@ -25,11 +25,12 @@ const HeroSection = () => {
       "linear-gradient(45deg, #a855f7, #3b82f6, #10b981, #8b5cf6, #06b6d4)",
     backgroundSize: "200% 200%",
     backgroundRepeat: "repeat",
-    backgroundClip: "text",
     WebkitBackgroundClip: "text",
-    color: "transparent",
     WebkitTextFillColor: "transparent",
-    willChange: "background-position"
+    backgroundClip: "text",
+    color: "transparent",
+    willChange: "background-position",
+    display: "inline-block"
   }}
 >
   Iris
