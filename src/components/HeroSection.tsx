@@ -27,7 +27,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 
-                <h2 className="text-base lg:text-3xl font-semibold text-muted-foreground">
+                <h2 className="text-base lg:text-3xl font-semibold text-white">
                   Calendar meets Context
                 </h2>
                 
