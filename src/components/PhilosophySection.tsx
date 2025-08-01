@@ -20,7 +20,7 @@ const PhilosophySection = () => {
               <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
                 The problem isn't your discipline.
               </p>
-              <p className="text-xl lg:text-2xl text-muted-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl lg:text-2xl text-foreground font-sf font-light leading-relaxed max-w-3xl mx-auto">
                 It's that your systems weren't designed for how you work.
               </p>
             </div>
