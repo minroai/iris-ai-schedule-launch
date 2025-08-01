@@ -23,7 +23,7 @@ const IntegrationsSection = () => {
   const allIntegrations = [...integrations, ...integrations];
 
   return (
-    <section className="py-16 bg-background overflow-hidden">
+    <section className="py-8 md:py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-12">
           <h2 className="text-2xl lg:text-4xl font-bold text-foreground">
