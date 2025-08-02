@@ -25,12 +25,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Debug environment
+        run: |
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "Current directory: $(pwd)"
+          echo "Files in current directory: $(ls -la)"
+
       - name: Build Vite app
         env:
           # Use GitHub secrets for production builds
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-        run: npm run build
+        run: |
+          echo "Building with Supabase URL: $SUPABASE_URL"
+          npm run build
 
       - name: Copy CNAME
         run: cp public/CNAME dist/CNAME
