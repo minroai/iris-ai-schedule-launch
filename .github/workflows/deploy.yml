@@ -31,6 +31,9 @@ jobs:
           cp -r src/assets/logos/* public/src/assets/logos/ || echo "No logo files to copy"
 
       - name: Build Vite app
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         run: npm run build
 
       - name: Copy CNAME

@@ -59,6 +59,19 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase (for data storage)
+
+## Supabase Integration
+
+This project uses Supabase to store early access form submissions. See [SUPABASE_SETUP.md](./SUPABASE_SETUP.md) for detailed setup instructions.
+
+### Quick Setup
+
+1. Create a Supabase project at [supabase.com](https://supabase.com)
+2. Run the SQL schema from `supabase-schema.sql` in your Supabase SQL Editor
+3. Add environment variables to your GitHub repository secrets:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
 
 ## How can I deploy this project?
 
