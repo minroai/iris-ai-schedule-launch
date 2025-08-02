@@ -16,26 +16,12 @@ This guide will help you set up Supabase for the early access email collection f
 
 1. In your Supabase dashboard, go to Settings → API
 2. Copy your Project URL and anon/public key
-
-### For Development (Local)
-Create a `.env` file in your project root with:
+3. Create a `.env` file in your project root with:
 
 ```env
 VITE_SUPABASE_URL=your_project_url_here
 VITE_SUPABASE_ANON_KEY=your_anon_key_here
 ```
-
-### For Production (GitHub Pages)
-Add these as GitHub repository secrets:
-
-1. Go to your GitHub repository
-2. Navigate to Settings → Secrets and variables → Actions
-3. Click "New repository secret"
-4. Add the following secrets:
-   - **Name**: `SUPABASE_URL` | **Value**: `your_project_url_here`
-   - **Name**: `SUPABASE_ANON_KEY` | **Value**: `your_anon_key_here`
-
-**Note**: These secrets will be automatically available to your deployed application on GitHub Pages.
 
 ## Step 3: Create the Database Table
 
@@ -100,10 +86,7 @@ CREATE TRIGGER update_early_access_emails_updated_at
 
 ## Troubleshooting
 
-- **"Missing Supabase environment variables"**: 
-  - For development: Make sure your `.env` file is in the project root and contains the correct variables
-  - For production: Check that your GitHub repository secrets are properly configured
+- **"Missing Supabase environment variables"**: Make sure your `.env` file is in the project root and contains the correct variables
 - **"Network error"**: Check your internet connection and Supabase project status
 - **"Email already registered"**: This is expected behavior - the email is already in the database
-- **Build errors**: Make sure you've installed the Supabase client: `npm install @supabase/supabase-js`
-- **Deployment issues**: Ensure your GitHub secrets are set correctly and the build process can access them 
+- **Build errors**: Make sure you've installed the Supabase client: `npm install @supabase/supabase-js` 
