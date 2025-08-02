@@ -66,15 +66,12 @@ This project is built with:
 This project uses Supabase to store early access email registrations. To set up Supabase:
 
 1. Create a Supabase project at [supabase.com](https://supabase.com)
-2. For development: Create a `.env` file in the root directory with your Supabase credentials:
+2. Create a `.env` file in the root directory with your Supabase credentials:
    ```
    VITE_SUPABASE_URL=your_supabase_project_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
-3. For production: Add these as GitHub repository secrets:
-   - Go to your GitHub repository → Settings → Secrets and variables → Actions
-   - Add `SUPABASE_URL` and `SUPABASE_ANON_KEY` as repository secrets
-4. Run the following SQL in your Supabase SQL editor to create the required table:
+3. Run the following SQL in your Supabase SQL editor to create the required table:
 
 ```sql
 -- Create the early_access_emails table
@@ -121,8 +118,6 @@ CREATE TRIGGER update_early_access_emails_updated_at
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/909ae932-93b3-450b-aee0-a918a4ff8f95) and click on Share -> Publish.
-
-**Note**: If you're using the Supabase integration, make sure to configure your GitHub repository secrets (`SUPABASE_URL` and `SUPABASE_ANON_KEY`) before deploying.
 
 ## Can I connect a custom domain to my Lovable project?
 
