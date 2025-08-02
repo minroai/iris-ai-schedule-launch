@@ -38,7 +38,7 @@ All colors MUST be HSL.
     --ring: 270 85% 68%;
 
     /* Premium gradients with elegant violet tones */
-    --gradient-primary: linear-gradient(135deg, hsl(270 85% 68%), hsl(265 80% 72%));
+    --gradient-primary: linear-gradient(135deg, hsl(270 85% 45%), hsl(265 80% 50%));
     --gradient-subtle: linear-gradient(180deg, hsl(240 8% 3%), hsl(240 10% 7%));
     --gradient-hero: linear-gradient(135deg, hsl(270 60% 10% / 0.90), hsl(265 70% 8% / 0.85));
 

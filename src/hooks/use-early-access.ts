@@ -42,6 +42,9 @@ export const useEarlyAccess = () => {
       }
 
       setIsSubmitted(true)
+      
+      // Open Tally form in a new tab after successful submission
+      window.open('https://tally.so/r/waqLPy', '_blank')
       return true
     } catch (err) {
       console.error('Error submitting early access:', err)
