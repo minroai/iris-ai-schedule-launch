@@ -90,17 +90,8 @@ const EarlyAccess = () => {
                   You're In!
                 </h1>
                 <p className="text-gray-700 text-lg lg:text-xl font-sf font-light leading-relaxed">
-                  Thanks for joining!
-                  <br />
-                  We'll send you an email when Iris is ready for you to try.
+                 Thanks for signing up. We'll send you an email when Iris is ready for you to try!
                 </p>
-                <div className="pt-6">
-                  <Link to="/">
-                    <button className="text-lg px-8 py-4 rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] transition font-sf font-medium">
-                      Back to Home
-                    </button>
-                  </Link>
-                </div>
               </div>
             </>
           )}
