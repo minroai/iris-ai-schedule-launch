@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEarlyAccess } from "@/hooks/use-early-access";
 
 const EarlyAccess = () => {
   const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { submitEarlyAccess, isLoading, error, isSubmitted, reset } = useEarlyAccess();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      console.log("Email submitted:", email);
-      setIsSubmitted(true);
+      await submitEarlyAccess({ email });
     }
   };
 
@@ -42,6 +42,13 @@ const EarlyAccess = () => {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-4">
+                  {error && (
+                    <div className="flex items-center gap-2 p-3 bg-red-50 border border-red-200 rounded-md text-red-700">
+                      <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                      <span className="text-sm">{error}</span>
+                    </div>
+                  )}
+                  
                   <Input
                     type="email"
                     placeholder="E-mail"
@@ -49,16 +56,26 @@ const EarlyAccess = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     className="h-14 text-lg bg-gray-100 border border-gray-200 rounded-md text-black placeholder:text-gray-500 focus-visible:ring-1 focus-visible:ring-primary/30 focus-visible:ring-offset-0"
                     required
+                    disabled={isLoading}
                   />
 
                   <button
                     type="submit"
-                    disabled={!email}
-                    className="w-full relative overflow-hidden rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] px-8 py-4 text-lg font-sf font-medium transition duration-300 ease-out hover:scale-[1.02] focus:outline-none"
+                    disabled={!email || isLoading}
+                    className="w-full relative overflow-hidden rounded-2xl text-black backdrop-blur-md bg-primary/10 border border-primary/30 shadow-[0_8px_32px_rgba(139,92,246,0.25)] hover:bg-primary/15 hover:border-primary/40 hover:shadow-[0_12px_48px_rgba(139,92,246,0.35)] px-8 py-4 text-lg font-sf font-medium transition duration-300 ease-out hover:scale-[1.02] focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span className="relative z-10 flex items-center justify-center">
-                      Join Early Access
-                      <ArrowRight className="w-5 h-5 ml-2" />
+                      {isLoading ? (
+                        <>
+                          <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin mr-2" />
+                          Submitting...
+                        </>
+                      ) : (
+                        <>
+                          Join Early Access
+                          <ArrowRight className="w-5 h-5 ml-2" />
+                        </>
+                      )}
                     </span>
                     <span className="absolute inset-0 z-0 bg-gradient-primary opacity-10 blur-2xl animate-pulse" />
                   </button>
