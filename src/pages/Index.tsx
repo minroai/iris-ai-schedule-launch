@@ -4,14 +4,14 @@ import EarlyAccessSection from "@/components/EarlyAccessSection";
 
 const Index = () => {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <div className="snap-start snap-always">
+    <div className="h-screen overflow-y-scroll">
+      <div>
         <HeroSection />
       </div>
-      <div className="snap-start snap-always">
+      <div>
         <PhilosophySection />
       </div>
-      <div className="snap-start snap-always">
+      <div>
         <EarlyAccessSection />
       </div>
     </div>
